@@ -1,0 +1,35 @@
+[
+  {
+    "id": "beh-profile-decision-time",
+    "title": "Blink and You Missed It",
+    "subtitle": "How long people actually look at your profile",
+    "stat": "3.2",
+    "statLabel": "seconds to decide",
+    "context": "The average user spends just 3.2 seconds deciding whether to swipe left or right on a profile. That is less time than it takes to read this sentence. Your first photo is not just important; it is everything.",
+    "comparison": "By comparison, the average person spends 7 seconds deciding what to order at a coffee shop.",
+    "category": "behavior",
+    "source": "Smitten Eye-Tracking Study 2025"
+  },
+  {
+    "id": "beh-peak-swiping",
+    "title": "Tuesday Night Fever",
+    "subtitle": "When the swiping really heats up",
+    "stat": "Tuesday, 8 PM",
+    "statLabel": "peak swiping hour",
+    "context": "Forget Friday nights. The biggest spike in dating-app activity happens on Tuesdays at 8 PM, right in that sweet spot between dinner and doom-scrolling. Across the Nordics, Tuesday consistently beats every other day for new matches, first messages, and profile updates.",
+    "comparison": "Sunday at 10 PM is the second-most active time, fueled by the collective dread of the work week ahead.",
+    "category": "behavior",
+    "source": "Nordic App Activity Report 2026"
+  },
+  {
+    "id": "beh-pet-messages",
+    "title": "Paws and Effect",
+    "subtitle": "The secret weapon hiding in your photo gallery",
+    "stat": "73%",
+    "statLabel": "of first messages mention a pet",
+    "context": "If your profile includes a pet photo, nearly three-quarters of your incoming first messages will reference the animal. Dogs are the ultimate icebreaker. People will ask about your golden retriever before they ask about you. Accept it.",
+    "comparison": "Only 12% of first messages reference a person's job, and 8% mention a travel photo.",
+    "category": "texting",
+    "source": "Smitten Conversation Analysis 2026"
+  }
+]

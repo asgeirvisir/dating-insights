@@ -1,0 +1,45 @@
+[
+  {
+    "id": "comp-pickiest-country",
+    "title": "Which Nordic country is the pickiest?",
+    "subtitle": "Average swipe-right rate by country",
+    "category": "nordic",
+    "items": [
+      { "name": "Iceland", "value": 72, "label": "72% left-swipe rate" },
+      { "name": "Denmark", "value": 64, "label": "64% left-swipe rate" },
+      { "name": "Norway", "value": 59, "label": "59% left-swipe rate" },
+      { "name": "Sweden", "value": 55, "label": "55% left-swipe rate" },
+      { "name": "Finland", "value": 48, "label": "48% left-swipe rate" }
+    ],
+    "unit": "%",
+    "source": "Nordic Swipe Analytics 2025"
+  },
+  {
+    "id": "comp-ghosting-age",
+    "title": "Which age group ghosts the most?",
+    "subtitle": "Percentage who have ghosted someone in the last 6 months",
+    "category": "behavior",
+    "items": [
+      { "name": "18-24", "value": 68, "label": "68% have ghosted" },
+      { "name": "25-29", "value": 52, "label": "52% have ghosted" },
+      { "name": "30-34", "value": 38, "label": "38% have ghosted" },
+      { "name": "35+", "value": 22, "label": "22% have ghosted" }
+    ],
+    "unit": "%",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "comp-first-message-gender",
+    "title": "Who sends the first message?",
+    "subtitle": "Percentage of first messages sent by women, by country",
+    "category": "nordic",
+    "items": [
+      { "name": "Women in Iceland", "value": 47, "label": "47%" },
+      { "name": "Women in Denmark", "value": 31, "label": "31%" },
+      { "name": "Women in Norway", "value": 28, "label": "28%" },
+      { "name": "Women in Sweden", "value": 25, "label": "25%" }
+    ],
+    "unit": "%",
+    "source": "Nordic Swipe Analytics 2025"
+  }
+]

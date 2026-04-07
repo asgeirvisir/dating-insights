@@ -1,26 +1,183 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-heading: "Merriweather", Georgia, serif;
+  --font-body: "Source Sans 3", sans-serif;
+
+  /* Brand Colors */
+  --color-brand-purple: #9B00FF;
+  --color-brand-pink: #FF509B;
+  --color-brand-cyan: #0CC4EF;
+
+  /* Purple Scale */
+  --color-purple-mega-dark: #581794;
+  --color-purple-super-dark: #6800B0;
+  --color-purple-extra-dark: #7800CA;
+  --color-purple-dark: #8A00E4;
+  --color-purple-main: #9B00FF;
+  --color-purple-light: #A44BFF;
+  --color-purple-extra-light: #B270FF;
+  --color-purple-super-light: #C38EFF;
+  --color-purple-mega-light: #D2ACFF;
+  --color-purple-max-light: #E6CFFF;
+
+  /* Pink Scale */
+  --color-pink-mega-dark: #AC0A54;
+  --color-pink-super-dark: #C01B65;
+  --color-pink-extra-dark: #DE327D;
+  --color-pink-dark: #ED408F;
+  --color-pink-main: #FF509B;
+  --color-pink-light: #FF69AA;
+  --color-pink-extra-light: #FF8BBF;
+  --color-pink-super-light: #FFA8D2;
+  --color-pink-mega-light: #FFC6E4;
+  --color-pink-max-light: #FFD9F1;
+
+  /* Surface Colors (Dark Mode) */
+  --color-surface-base: #1C1C1C;
+  --color-surface-card: #272727;
+  --color-surface-elevated: #333333;
+
+  /* Content Colors */
+  --color-content-primary: #FAFAFA;
+  --color-content-secondary: #D2D2D2;
+  --color-content-muted: #8D8D8D;
+
+  /* Neutral Scale */
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F2F2F2;
+  --color-neutral-200: #E8E8E8;
+  --color-neutral-300: #D2D2D2;
+  --color-neutral-400: #BBBBBB;
+  --color-neutral-500: #A4A4A4;
+  --color-neutral-600: #8D8D8D;
+  --color-neutral-700: #707070;
+  --color-neutral-800: #575757;
+  --color-neutral-900: #434343;
+  --color-neutral-950: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base Styles */
+html {
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-surface-base);
+  color: var(--color-content-secondary);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient Utilities */
+.gradient-primary {
+  background: linear-gradient(135deg, #9B00FF, #FF509B);
+}
+
+.gradient-data {
+  background: linear-gradient(135deg, #0CC4EF, #9B00FF);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #9B00FF, #FF509B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-data {
+  background: linear-gradient(135deg, #0CC4EF, #9B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 12px;
+  background: var(--color-surface-card);
+  border: 1px solid rgba(155, 0, 255, 0.2);
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(135deg, #9B00FF, #FF509B);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0.5;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+.gradient-border:hover {
+  box-shadow: 0 0 24px rgba(155, 0, 255, 0.2);
+  border-color: transparent;
+}
+
+/* Section Divider */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #9B00FF, #FF509B, transparent);
+  opacity: 0.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-800);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-700);
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Data Ticker Animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker-scroll var(--ticker-speed, 30s) linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "rank-reply-times",
+    "title": "Cities With the Fastest Reply Times",
+    "subtitle": "Average time to respond to a first message",
+    "category": "nordic",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Reykjavik",
+        "value": "8 min",
+        "description": "Icelanders waste no time. With a dating pool the size of a large office, every match counts."
+      },
+      {
+        "rank": 2,
+        "name": "Copenhagen",
+        "value": "14 min",
+        "description": "Danes reply fast, but only if you pass the vibe check. That first message better be good."
+      },
+      {
+        "rank": 3,
+        "name": "Oslo",
+        "value": "22 min",
+        "description": "Norwegians take a thoughtful pause. They are reading your bio twice before replying."
+      },
+      {
+        "rank": 4,
+        "name": "Helsinki",
+        "value": "31 min",
+        "description": "Finnish daters are deliberate. They reply eventually, and when they do, they mean it."
+      },
+      {
+        "rank": 5,
+        "name": "Stockholm",
+        "value": "38 min",
+        "description": "The capital of playing it cool. Stockholm takes its time, but the conversations tend to last longer."
+      }
+    ],
+    "source": "Nordic Messaging Analytics 2025"
+  },
+  {
+    "id": "rank-first-date-spots",
+    "title": "Most Popular First-Date Spots",
+    "subtitle": "Where Nordic daters go for that crucial first meeting",
+    "category": "culture",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Coffee Shop",
+        "value": "34%",
+        "description": "The undisputed champion. Low stakes, easy exit strategy, and you both have something to hold."
+      },
+      {
+        "rank": 2,
+        "name": "Bar / Wine Bar",
+        "value": "27%",
+        "description": "Liquid courage has entered the chat. Evening dates at bars remain a rock-solid second choice."
+      },
+      {
+        "rank": 3,
+        "name": "Walk in a Park",
+        "value": "18%",
+        "description": "The Nordic special. Free, scenic, and you can always blame the weather if you need to leave early."
+      },
+      {
+        "rank": 4,
+        "name": "Restaurant",
+        "value": "12%",
+        "description": "A power move that signals serious intent. Or a very optimistic take on a stranger from the internet."
+      },
+      {
+        "rank": 5,
+        "name": "Museum / Gallery",
+        "value": "9%",
+        "description": "The intellectual flex. Great for conversation starters, terrible for awkward silences echoing off marble floors."
+      }
+    ],
+    "source": "Smitten Nordic Dating Survey 2026"
+  }
+]

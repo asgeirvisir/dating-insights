@@ -1,0 +1,323 @@
+[
+  {
+    "id": "story-double-texting",
+    "slug": "double-texting-isnt-desperate-anymore",
+    "title": "Double Texting Isn't Desperate Anymore",
+    "subtitle": "The unwritten rule is being rewritten. Here's what the data says.",
+    "category": "texting",
+    "tags": ["texting", "etiquette", "trends", "guessary"],
+    "publishedAt": "2026-03-12T09:00:00Z",
+    "author": { "name": "Smitten Data Team", "role": "Editorial" },
+    "heroImage": {
+      "src": "/images/stories/double-texting-hero.jpg",
+      "alt": "Two speech bubbles overlapping on a gradient background"
+    },
+    "excerpt": "62% of daters now say double texting is perfectly fine. The stigma around sending a follow-up message is fading fast, and the data proves it.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "For years, the double text was the cardinal sin of digital dating. Send two messages in a row without a reply and you were branded as desperate, clingy, or worst of all, too keen. But the data tells a very different story in 2026."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Numbers Have Shifted"
+      },
+      {
+        "type": "paragraph",
+        "text": "We surveyed 4,280 active daters across the Nordics and asked a simple question: is double texting okay? The answer was decisive. 62% said yes. That is not a slim majority; it is a cultural shift happening in real time."
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "guessary",
+        "moduleId": "guess-double-texting"
+      },
+      {
+        "type": "pullQuote",
+        "text": "If someone is interested, they will not be scared off by a follow-up text. If they are scared off, they were never that interested.",
+        "attribution": "Survey respondent, 27, Copenhagen"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "What Changed?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The shift is generational but not exclusively so. Among 18-24 year olds, 74% are fine with double texting. Among 35+ users, it is still 51%. The broader cultural move toward authenticity over game-playing is dragging even the most committed cool-texters into the modern era. People are tired of pretending to be less interested than they are."
+      },
+      {
+        "type": "paragraph",
+        "text": "There is a caveat, though. The type of double text matters enormously. A follow-up that adds something new (a funny observation, a relevant link, a question) lands well. A second \"hey\" or a passive-aggressive \"guess you're not interested\" does not. Context is king, and content is queen."
+      }
+    ],
+    "dataModules": [
+      { "type": "guessary", "id": "guess-double-texting" }
+    ],
+    "relatedStories": ["story-peak-swiping", "story-profile-work"],
+    "mediaReuse": {
+      "headline": "62% Say Double Texting Is Fine Now",
+      "stat": "62% of Nordic daters say double texting is no longer desperate",
+      "questionAngle": "Is the double text finally socially acceptable?",
+      "blurb": "The double text has been rehabilitated. 62% of daters now say sending a follow-up message is perfectly fine, according to new data from Smitten's Nordic Dating Survey."
+    }
+  },
+  {
+    "id": "story-pickiest-country",
+    "slug": "which-nordic-country-is-the-pickiest",
+    "title": "Which Nordic Country Is the Pickiest on Dating Apps?",
+    "subtitle": "We ranked all five Nordic nations by their swipe-left rates. Iceland, you are brutal.",
+    "category": "nordic",
+    "tags": ["nordic", "comparison", "swiping", "iceland", "denmark"],
+    "publishedAt": "2026-03-19T09:00:00Z",
+    "author": { "name": "Smitten Data Team", "role": "Editorial" },
+    "heroImage": {
+      "src": "/images/stories/pickiest-country-hero.jpg",
+      "alt": "Nordic flags arranged in a competitive bracket format"
+    },
+    "excerpt": "Iceland leads with a 72% left-swipe rate, making it the pickiest dating market in the Nordics. Finland is the most welcoming. Here's the full ranking.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "If you have ever swiped through profiles in Reykjavik and felt like nobody was matching back, it is not your imagination. Iceland has the highest left-swipe rate in the entire Nordic region, and it is not even close."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Full Ranking"
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "comparison",
+        "moduleId": "comp-pickiest-country"
+      },
+      {
+        "type": "paragraph",
+        "text": "Iceland's 72% left-swipe rate means nearly three out of four profiles get rejected on sight. Compare that to Finland, where the rate drops to 48%, and you start to understand why Reykjavik daters have a reputation for being picky."
+      },
+      {
+        "type": "pullQuote",
+        "text": "In Iceland, everyone has dated everyone, or at least knows someone who has. You get picky when the pool is small and the memories are long.",
+        "attribution": "Reykjavik-based dating coach"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Why Iceland Swipes Left So Much"
+      },
+      {
+        "type": "paragraph",
+        "text": "The answer is surprisingly simple: population. With fewer than 400,000 people in the entire country, Icelandic daters have a heightened awareness of their social circles. The famous \"Is this person my cousin?\" app is not just a joke; it is a genuine concern. Small dating pools breed high standards because every swipe feels more consequential."
+      },
+      {
+        "type": "paragraph",
+        "text": "Finland's more relaxed swiping style, meanwhile, correlates with a dating culture that values sincerity over snap judgments. Finnish users spend an average of 4.1 seconds per profile compared to Iceland's 2.8 seconds. More time looking means more benefit of the doubt."
+      }
+    ],
+    "dataModules": [
+      { "type": "comparison", "id": "comp-pickiest-country" }
+    ],
+    "relatedStories": ["story-10-90-likes", "story-double-texting"],
+    "mediaReuse": {
+      "headline": "Iceland Is the Pickiest Dating Market in the Nordics",
+      "stat": "72% of Icelandic swipes are left swipes",
+      "questionAngle": "Which Nordic country rejects the most profiles on dating apps?",
+      "blurb": "New data reveals Iceland leads the Nordics in pickiness, with a 72% left-swipe rate. Finland is the most welcoming at 48%. Small populations breed high standards."
+    }
+  },
+  {
+    "id": "story-10-90-likes",
+    "slug": "do-10-percent-get-90-percent-of-likes",
+    "title": "Do 10% of Users Really Get 90% of the Likes?",
+    "subtitle": "The viral dating-app claim, fact-checked with actual data.",
+    "category": "apps",
+    "tags": ["myths", "apps", "likes", "inequality", "data"],
+    "publishedAt": "2026-03-26T09:00:00Z",
+    "author": { "name": "Smitten Data Team", "role": "Editorial" },
+    "heroImage": {
+      "src": "/images/stories/10-90-likes-hero.jpg",
+      "alt": "A bar chart shaped like a heart with uneven distribution"
+    },
+    "excerpt": "The internet's favorite dating doom stat isn't quite right. The real number is 58%, and the full picture is more nuanced than the meme suggests.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "You have seen it everywhere: on Reddit, in think pieces, screenshotted across Twitter. The claim that 10% of dating app users receive 90% of all likes has become the go-to statistic for anyone arguing that dating apps are broken. But is it actually true?"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Verdict: Partly True"
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "myth",
+        "moduleId": "myth-10-90-likes"
+      },
+      {
+        "type": "paragraph",
+        "text": "The inequality is real. The distribution of likes on dating apps follows a power-law curve, meaning a small number of profiles attract a disproportionate share of attention. But the specific 10/90 ratio? That is an exaggeration that traces back to a single OkCupid blog post from 2009, which has been misquoted and misunderstood ever since."
+      },
+      {
+        "type": "pullQuote",
+        "text": "The top 10% receive 58% of likes. That is still wildly unequal, but it is not the apocalyptic 90% that the internet loves to quote.",
+        "attribution": "Smitten Data Team analysis"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "What This Actually Means for You"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here is the part that gets lost in the doom-scrolling: the distribution is unequal, but it is not fixed. Profile quality matters enormously. Users who optimize their profiles, specifically their first photo and bio, can move up the distribution curve significantly. The data shows that a strong profile overhaul can increase likes by 30-50% within the first week."
+      },
+      {
+        "type": "paragraph",
+        "text": "The 10/90 myth is seductive because it lets people off the hook. If the game is rigged, why bother trying? But the reality is more empowering: the game is unequal, but effort genuinely moves the needle. That is less catchy for a meme, but far more useful for your love life."
+      }
+    ],
+    "dataModules": [
+      { "type": "myth", "id": "myth-10-90-likes" }
+    ],
+    "relatedStories": ["story-profile-work", "story-pickiest-country"],
+    "mediaReuse": {
+      "headline": "The 10/90 Dating App Myth Is Only Half Right",
+      "stat": "Top 10% get 58% of likes, not 90%",
+      "questionAngle": "Is the viral dating app inequality stat actually true?",
+      "blurb": "The claim that 10% of dating app users get 90% of likes has gone viral, but Smitten's data analysis tells a different story. The real figure is 58%, and unlike the meme, the situation is fixable."
+    }
+  },
+  {
+    "id": "story-profile-work",
+    "slug": "what-makes-a-dating-profile-work",
+    "title": "What Actually Makes a Dating Profile Work",
+    "subtitle": "We analyzed thousands of profiles to find the traits that separate matches from crickets.",
+    "category": "profiles",
+    "tags": ["profiles", "tips", "photos", "bios", "data"],
+    "publishedAt": "2026-04-02T09:00:00Z",
+    "author": { "name": "Smitten Data Team", "role": "Editorial" },
+    "heroImage": {
+      "src": "/images/stories/profile-work-hero.jpg",
+      "alt": "A smartphone screen showing a dating profile with data annotations"
+    },
+    "excerpt": "Specific hobbies beat vague adjectives. Humor shown beats humor claimed. And your first photo is worth more than your entire bio. Here's the full breakdown.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Everyone has opinions about what makes a great dating profile. Your friends say more group shots. Your mum says you should smile more. The internet says lead with a shirtless photo (please don't). But what does the actual data say?"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Four Traits That Matter Most"
+      },
+      {
+        "type": "paragraph",
+        "text": "We analyzed engagement data from thousands of profiles across Nordic dating apps and identified four traits that consistently separate the top performers from the average. None of them involve being conventionally attractive, which is the whole point."
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "profileInsight",
+        "moduleId": "pi-what-makes-profiles-work"
+      },
+      {
+        "type": "pullQuote",
+        "text": "Writing 'I love travel and food' tells me nothing. Writing 'I once ate a sheep's head in Reykjavik and it changed my life' tells me everything.",
+        "attribution": "Focus group participant, 31, Oslo"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "The Photo Factor"
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "profileInsight",
+        "moduleId": "pi-photo-science"
+      },
+      {
+        "type": "paragraph",
+        "text": "The single most impactful change you can make is your lead photo. A well-lit, smiling, solo shot increases your swipe-right rate by 62% compared to a group photo or a sunglasses shot. That is not a marginal improvement; it is a transformation. And yet, roughly 40% of profiles still lead with a photo where you cannot clearly see the person's face."
+      },
+      {
+        "type": "paragraph",
+        "text": "The good news? These are all fixable. Unlike height or bone structure, your bio, photo order, and conversation starters are entirely within your control. The data is clear: effort in, matches out."
+      }
+    ],
+    "dataModules": [
+      { "type": "profileInsight", "id": "pi-what-makes-profiles-work" },
+      { "type": "profileInsight", "id": "pi-photo-science" }
+    ],
+    "relatedStories": ["story-10-90-likes", "story-double-texting"],
+    "mediaReuse": {
+      "headline": "The 4 Profile Traits That Actually Get Matches",
+      "stat": "Specific hobbies in bios get 48% more conversations",
+      "questionAngle": "What do top-performing dating profiles have in common?",
+      "blurb": "Smitten analyzed thousands of dating profiles and found four data-backed traits that separate match magnets from the rest. Spoiler: it has nothing to do with being a 10."
+    }
+  },
+  {
+    "id": "story-peak-swiping",
+    "slug": "tuesday-is-the-best-day-for-a-first-date",
+    "title": "Tuesday Is the Best Day for a First Date (and for Swiping)",
+    "subtitle": "Peak dating-app activity isn't when you think. The data reveals the hidden rhythms of digital romance.",
+    "category": "behavior",
+    "tags": ["behavior", "timing", "swiping", "first-dates", "data"],
+    "publishedAt": "2026-04-07T09:00:00Z",
+    "author": { "name": "Smitten Data Team", "role": "Editorial" },
+    "heroImage": {
+      "src": "/images/stories/tuesday-swiping-hero.jpg",
+      "alt": "A calendar with Tuesday circled in pink with heart decorations"
+    },
+    "excerpt": "Tuesday at 8 PM is the most active time on dating apps across the Nordics. It's also when people are most likely to actually respond to your message.",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Ask anyone when dating apps are busiest and they will guess Friday or Saturday night. It makes sense: weekend energy, going-out vibes, maybe a drink or two lowering the inhibitions. But the data says something completely different."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Tuesday Phenomenon"
+      },
+      {
+        "type": "dataModule",
+        "moduleType": "behavioral",
+        "moduleId": "beh-peak-swiping"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tuesday at 8 PM consistently ranks as the peak activity hour across every Nordic country we tracked. New matches, first messages, profile updates, and swipe volume all spike on Tuesday evenings. The pattern held across age groups, genders, and platforms."
+      },
+      {
+        "type": "pullQuote",
+        "text": "Friday night is for going out. Tuesday night is for planning who you want to go out with.",
+        "attribution": "Dating app product manager, Stockholm"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Why Tuesday Works"
+      },
+      {
+        "type": "paragraph",
+        "text": "The theory is straightforward: by Tuesday evening, the week has settled into its rhythm but the weekend still feels close enough to make plans. People are home, relaxed but not exhausted, and in a forward-looking mood. Friday-night swiping, by contrast, tends to be impulsive and lower-quality. Those swipes are less likely to lead to actual conversations."
+      },
+      {
+        "type": "paragraph",
+        "text": "The tactical takeaway? If you want more matches and better conversations, do your swiping on Tuesday evenings. You will be competing for attention at a busier time, but the people you match with will be more engaged and more likely to respond. Quality over quantity, served every Tuesday at eight."
+      }
+    ],
+    "dataModules": [
+      { "type": "behavioral", "id": "beh-peak-swiping" }
+    ],
+    "relatedStories": ["story-double-texting", "story-profile-work"],
+    "mediaReuse": {
+      "headline": "Peak Swiping Time: Tuesday at 8 PM",
+      "stat": "Tuesday 8 PM is the #1 time for dating app activity in the Nordics",
+      "questionAngle": "Why is Tuesday night the busiest time on dating apps?",
+      "blurb": "Forget Friday night. New data from Smitten shows that Tuesday at 8 PM is when dating apps across the Nordics light up with the most matches, messages, and profile activity."
+    }
+  }
+]

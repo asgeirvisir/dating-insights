@@ -1,0 +1,72 @@
+[
+  {
+    "id": "qs-swipe-right-rate",
+    "label": "Average swipe-right rate in the Nordics",
+    "value": "39%",
+    "category": "behavior",
+    "source": "Nordic Swipe Analytics 2025"
+  },
+  {
+    "id": "qs-ghosting-rate",
+    "label": "Have been ghosted at least once",
+    "value": "78%",
+    "category": "behavior",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "qs-avg-matches-week",
+    "label": "Average matches per week per active user",
+    "value": "4.7",
+    "category": "apps",
+    "source": "Nordic Swipe Analytics 2025"
+  },
+  {
+    "id": "qs-bio-read-rate",
+    "label": "Read the bio before swiping",
+    "value": "Only 38%",
+    "category": "profiles",
+    "source": "Smitten Eye-Tracking Study 2025"
+  },
+  {
+    "id": "qs-first-date-success",
+    "label": "First dates that lead to a second",
+    "value": "52%",
+    "category": "culture",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "qs-reykjavik-reply",
+    "label": "Fastest average reply time: Reykjavik",
+    "value": "8 min",
+    "category": "nordic",
+    "source": "Nordic Messaging Analytics 2025"
+  },
+  {
+    "id": "qs-dog-photo-boost",
+    "label": "Match rate boost from a dog photo",
+    "value": "+22%",
+    "category": "profiles",
+    "source": "Smitten Visual Engagement Study 2026"
+  },
+  {
+    "id": "qs-peak-activity",
+    "label": "Peak swiping time across all Nordic countries",
+    "value": "Tue 8 PM",
+    "category": "behavior",
+    "source": "Nordic App Activity Report 2026"
+  },
+  {
+    "id": "qs-coffee-date",
+    "label": "Most popular first-date choice",
+    "value": "Coffee (34%)",
+    "category": "culture",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "qs-humor-impact",
+    "label": "Match rate boost from a witty bio",
+    "value": "+37%",
+    "category": "profiles",
+    "source": "Smitten Profile Performance Data 2026"
+  }
+]

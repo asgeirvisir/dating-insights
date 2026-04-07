@@ -1,0 +1,42 @@
+[
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "flag": "🇮🇸",
+    "region": "nordic",
+    "population": 383726,
+    "capitalCity": "Reykjavik"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "flag": "🇩🇰",
+    "region": "nordic",
+    "population": 5932654,
+    "capitalCity": "Copenhagen"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "flag": "🇳🇴",
+    "region": "nordic",
+    "population": 5488984,
+    "capitalCity": "Oslo"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "flag": "🇸🇪",
+    "region": "nordic",
+    "population": 10521556,
+    "capitalCity": "Stockholm"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "flag": "🇫🇮",
+    "region": "nordic",
+    "population": 5563970,
+    "capitalCity": "Helsinki"
+  }
+]

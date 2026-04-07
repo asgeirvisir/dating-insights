@@ -1,0 +1,50 @@
+[
+  {
+    "id": "texting",
+    "name": "Texting & Messaging",
+    "slug": "texting",
+    "description": "The art and science of digital conversation, from first messages to the dreaded double text.",
+    "color": "#6366f1",
+    "icon": "MessageCircle"
+  },
+  {
+    "id": "profiles",
+    "name": "Profiles & Photos",
+    "slug": "profiles",
+    "description": "What works, what flops, and the tiny tweaks that make a massive difference.",
+    "color": "#ec4899",
+    "icon": "User"
+  },
+  {
+    "id": "behavior",
+    "name": "Behavior & Psychology",
+    "slug": "behavior",
+    "description": "The fascinating (and sometimes alarming) patterns behind how we swipe, match, and date.",
+    "color": "#f59e0b",
+    "icon": "Brain"
+  },
+  {
+    "id": "apps",
+    "name": "Dating Apps",
+    "slug": "apps",
+    "description": "Platform trends, algorithm insights, and the state of digital dating.",
+    "color": "#10b981",
+    "icon": "Smartphone"
+  },
+  {
+    "id": "culture",
+    "name": "Dating Culture",
+    "slug": "culture",
+    "description": "How dating norms, expectations, and trends are shifting across the Nordics and beyond.",
+    "color": "#8b5cf6",
+    "icon": "Heart"
+  },
+  {
+    "id": "nordic",
+    "name": "Nordic Spotlight",
+    "slug": "nordic",
+    "description": "Country-by-country data and comparisons across Iceland, Denmark, Norway, Sweden, and Finland.",
+    "color": "#0ea5e9",
+    "icon": "Globe"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "pi-what-makes-profiles-work",
+    "title": "What Makes a Dating Profile Actually Work",
+    "subtitle": "The traits that separate the top 20% from everyone else",
+    "category": "profiles",
+    "traits": [
+      {
+        "trait": "Specific Hobbies Over Vague Adjectives",
+        "impact": "+48% more conversations started",
+        "description": "\"I make a mean carbonara on Sundays\" beats \"I love food\" every single time. Profiles that name specific activities instead of generic interests get nearly 50% more first messages."
+      },
+      {
+        "trait": "Humor That Shows, Not Tells",
+        "impact": "+37% match rate",
+        "description": "Writing \"I'm funny\" is the least funny thing you can do. Profiles that demonstrate wit through a clever line or a self-deprecating joke outperform self-proclaimed comedians by a landslide."
+      },
+      {
+        "trait": "A Clear Face in the First Photo",
+        "impact": "+62% swipe-right rate",
+        "description": "Sunglasses, group shots, and artsy silhouettes tank your odds. The single most impactful change? A well-lit, smiling solo photo as your lead image. Revolutionary, we know."
+      },
+      {
+        "trait": "A Conversation Starter in the Bio",
+        "impact": "+29% longer first messages",
+        "description": "End your bio with a question or a hot take and watch your inbox fill with actual sentences instead of \"hey.\" Give people something to grab onto."
+      }
+    ],
+    "source": "Smitten Profile Performance Data 2026"
+  },
+  {
+    "id": "pi-photo-science",
+    "title": "The Science of the Perfect Profile Photo",
+    "subtitle": "What the data says about which photos get the most likes",
+    "category": "profiles",
+    "traits": [
+      {
+        "trait": "Natural Light Over Flash",
+        "impact": "+41% more likes",
+        "description": "Golden hour is not just for Instagram influencers. Profiles with natural-light photos dramatically outperform those shot with harsh flash or dim indoor lighting."
+      },
+      {
+        "trait": "Activity Shots in Position 2 or 3",
+        "impact": "+33% profile completion rate",
+        "description": "Lead with your face, then show your life. Profiles that place an activity photo (hiking, cooking, playing guitar) in the second or third slot keep people scrolling through all your photos."
+      },
+      {
+        "trait": "The Pet Photo Effect",
+        "impact": "+22% match rate",
+        "description": "Including a photo with a dog increases matches by 22%. Cats? A modest 11%. No pet? Borrow one for the afternoon. We will not judge."
+      }
+    ],
+    "source": "Smitten Visual Engagement Study 2026"
+  }
+]

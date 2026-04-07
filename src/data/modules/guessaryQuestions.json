@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "q-102",
+    "originalIndex": 102,
+    "question": "Has <FIRST_NAME> had an affair?",
+    "displayQuestion": "How many people have had an affair?",
+    "emoji": "💔",
+    "headline": "Affairs triple between your 20s and 40s",
+    "tags": [
+      "spicy"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 5,
+        "25-34": 10,
+        "35-44": 19,
+        "45+": 21
+      }
+    }
+  },
+  {
+    "id": "q-83",
+    "originalIndex": 83,
+    "question": "Is <FIRST_NAME> religious?",
+    "displayQuestion": "How many people are religious?",
+    "emoji": "🙏",
+    "headline": "Religion climbs steadily with age",
+    "tags": [
+      "mainstream"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 17,
+        "25-34": 16,
+        "35-44": 27,
+        "45+": 42
+      }
+    }
+  },
+  {
+    "id": "q-3",
+    "originalIndex": 3,
+    "question": "Does <FIRST_NAME> have kids?",
+    "displayQuestion": "How many people have kids?",
+    "emoji": "👶",
+    "headline": null,
+    "tags": [
+      "mainstream"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 3,
+        "25-34": 24,
+        "35-44": 71,
+        "45+": 94
+      }
+    }
+  },
+  {
+    "id": "q-29",
+    "originalIndex": 29,
+    "question": "Does <FIRST_NAME> consider themself normal?",
+    "displayQuestion": "How many people consider themselves normal?",
+    "emoji": "🤷",
+    "headline": "Only 31% of young adults think they're normal",
+    "tags": [
+      "mainstream"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 35,
+        "35-44": 49,
+        "45+": 74
+      }
+    }
+  },
+  {
+    "id": "q-26",
+    "originalIndex": 26,
+    "question": "Has <FIRST_NAME> slept with more than ten people?",
+    "displayQuestion": "How many people have slept with more than ten people?",
+    "emoji": "🛏️",
+    "headline": "The number jumps dramatically after 25",
+    "tags": [
+      "spicy"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 21,
+        "25-34": 67,
+        "35-44": 76,
+        "45+": 66
+      }
+    }
+  },
+  {
+    "id": "q-119",
+    "originalIndex": 119,
+    "question": "Is <FIRST_NAME> an iPhone user?",
+    "displayQuestion": "How many people are iPhone users?",
+    "emoji": "📱",
+    "headline": "The iPhone generation gap is real",
+    "tags": [
+      "niche"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 96,
+        "25-34": 76,
+        "35-44": 56,
+        "45+": 57
+      }
+    }
+  },
+  {
+    "id": "q-93",
+    "originalIndex": 93,
+    "question": "Has <FIRST_NAME> been in love?",
+    "displayQuestion": "How many people have been in love?",
+    "emoji": "❤️",
+    "headline": "By 45, almost everyone has been in love",
+    "tags": [
+      "mainstream"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 60,
+        "25-34": 80,
+        "35-44": 92,
+        "45+": 97
+      }
+    }
+  },
+  {
+    "id": "q-95",
+    "originalIndex": 95,
+    "question": "Does <FIRST_NAME> want to have children?",
+    "displayQuestion": "How many people want to have children?",
+    "emoji": "👶",
+    "headline": null,
+    "tags": [
+      "mainstream"
+    ],
+    "featured": true,
+    "slices": {
+      "all": {
+        "18-24": 86,
+        "25-34": 88,
+        "35-44": 56,
+        "45+": 17
+      }
+    }
+  },
+  {
+    "id": "q-5",
+    "originalIndex": 5,
+    "question": "Does <FIRST_NAME> have a bachelor's degree?",
+    "displayQuestion": "How many people have a bachelor's degree?",
+    "emoji": "📚",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 8,
+        "25-34": 59,
+        "35-44": 65,
+        "45+": 67
+      }
+    }
+  },
+  {
+    "id": "q-115",
+    "originalIndex": 115,
+    "question": "Are both of <FIRST_NAME>'s parents alive?",
+    "displayQuestion": "How many people have both parents alive?",
+    "emoji": "👶",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 96,
+        "25-34": 91,
+        "35-44": 81,
+        "45+": 44
+      }
+    }
+  },
+  {
+    "id": "q-135",
+    "originalIndex": 135,
+    "question": "Has <FIRST_NAME> kissed someone of the same sex?",
+    "displayQuestion": "How many people have kissed someone of the same sex?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 87,
+        "25-34": 81,
+        "35-44": 73,
+        "45+": 39
+      }
+    }
+  },
+  {
+    "id": "q-18",
+    "originalIndex": 18,
+    "question": "Has <FIRST_NAME> been to a strip club?",
+    "displayQuestion": "How many people have been to a strip club?",
+    "emoji": "💃",
+    "headline": "Strip clubs are a rite of passage after 35",
+    "tags": [
+      "spicy"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 11,
+        "25-34": 36,
+        "35-44": 58,
+        "45+": 58
+      }
+    }
+  },
+  {
+    "id": "q-111",
+    "originalIndex": 111,
+    "question": "Does <FIRST_NAME> drink coffee?",
+    "displayQuestion": "How many people drink coffee?",
+    "emoji": "☕",
+    "headline": "Somewhere after 40, coffee becomes part of the personality",
+    "tags": [
+      "mainstream"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 40,
+        "25-34": 64,
+        "35-44": 72,
+        "45+": 86
+      }
+    }
+  },
+  {
+    "id": "q-57",
+    "originalIndex": 57,
+    "question": "Does <FIRST_NAME> like to read?",
+    "displayQuestion": "How many people like to read?",
+    "emoji": "📚",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 45,
+        "25-34": 74,
+        "35-44": 81,
+        "45+": 89
+      }
+    }
+  },
+  {
+    "id": "q-78",
+    "originalIndex": 78,
+    "question": "Does <FIRST_NAME> have a celeb crush?",
+    "displayQuestion": "How many people have a celeb crush?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 84,
+        "25-34": 74,
+        "35-44": 59,
+        "45+": 42
+      }
+    }
+  },
+  {
+    "id": "q-120",
+    "originalIndex": 120,
+    "question": "Has <FIRST_NAME> cheated on a test?",
+    "displayQuestion": "How many people have cheated on a test?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 88,
+        "25-34": 77,
+        "35-44": 60,
+        "45+": 46
+      }
+    }
+  },
+  {
+    "id": "q-49",
+    "originalIndex": 49,
+    "question": "Does <FIRST_NAME> sing in the shower?",
+    "displayQuestion": "How many people sing in the shower?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 80,
+        "25-34": 65,
+        "35-44": 56,
+        "45+": 42
+      }
+    }
+  },
+  {
+    "id": "q-112",
+    "originalIndex": 112,
+    "question": "Can <FIRST_NAME> change a tire?",
+    "displayQuestion": "How many people can change a tire?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 44,
+        "25-34": 63,
+        "35-44": 72,
+        "45+": 80
+      }
+    }
+  },
+  {
+    "id": "q-43",
+    "originalIndex": 43,
+    "question": "Has <FIRST_NAME> seen someone die?",
+    "displayQuestion": "How many people have seen someone die?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 46,
+        "35-44": 53,
+        "45+": 66
+      }
+    }
+  },
+  {
+    "id": "q-37",
+    "originalIndex": 37,
+    "question": "Has <FIRST_NAME> been dumped?",
+    "displayQuestion": "How many people have been dumped?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 42,
+        "25-34": 62,
+        "35-44": 77,
+        "45+": 77
+      }
+    }
+  },
+  {
+    "id": "q-68",
+    "originalIndex": 68,
+    "question": "Has <FIRST_NAME> used food during sex?",
+    "displayQuestion": "How many people have used food during sex?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 19,
+        "25-34": 39,
+        "35-44": 52,
+        "45+": 44
+      }
+    }
+  },
+  {
+    "id": "q-35",
+    "originalIndex": 35,
+    "question": "Is <FIRST_NAME> addicted to anything?",
+    "displayQuestion": "How many people are addicted to anything?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 70,
+        "25-34": 59,
+        "35-44": 49,
+        "45+": 37
+      }
+    }
+  },
+  {
+    "id": "q-59",
+    "originalIndex": 59,
+    "question": "Has <FIRST_NAME> been injured in a dumb way?",
+    "displayQuestion": "How many people have been injured in a dumb way?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 89,
+        "25-34": 84,
+        "35-44": 73,
+        "45+": 56
+      }
+    }
+  },
+  {
+    "id": "q-80",
+    "originalIndex": 80,
+    "question": "Does <FIRST_NAME> believe in love at first sight?",
+    "displayQuestion": "How many people believe in love at first sight?",
+    "emoji": "💘",
+    "headline": "Belief in love at first sight grows with age",
+    "tags": [
+      "mainstream"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 45,
+        "25-34": 43,
+        "35-44": 56,
+        "45+": 75
+      }
+    }
+  },
+  {
+    "id": "q-51",
+    "originalIndex": 51,
+    "question": "Does <FIRST_NAME> have any piercings?",
+    "displayQuestion": "How many people have any piercings?",
+    "emoji": "🎨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 93,
+        "25-34": 89,
+        "35-44": 79,
+        "45+": 61
+      }
+    }
+  },
+  {
+    "id": "q-132",
+    "originalIndex": 132,
+    "question": "Has <FIRST_NAME> picked up a hitchhiker?",
+    "displayQuestion": "How many people have picked up a hitchhiker?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 49,
+        "35-44": 52,
+        "45+": 61
+      }
+    }
+  },
+  {
+    "id": "q-45",
+    "originalIndex": 45,
+    "question": "Has <FIRST_NAME> witnessed a crime?",
+    "displayQuestion": "How many people have witnessed a crime?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 62,
+        "25-34": 54,
+        "35-44": 50,
+        "45+": 32
+      }
+    }
+  },
+  {
+    "id": "q-36",
+    "originalIndex": 36,
+    "question": "Has <FIRST_NAME> taken a picture naked?",
+    "displayQuestion": "How many people have taken a picture naked?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 74,
+        "25-34": 77,
+        "35-44": 71,
+        "45+": 47
+      }
+    }
+  },
+  {
+    "id": "q-13",
+    "originalIndex": 13,
+    "question": "Has <FIRST_NAME> ever felt like someone is following them?",
+    "displayQuestion": "How many people have ever felt like someone is following them?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 70,
+        "25-34": 55,
+        "35-44": 54,
+        "45+": 41
+      }
+    }
+  },
+  {
+    "id": "q-24",
+    "originalIndex": 24,
+    "question": "Is <FIRST_NAME> afraid of the dark?",
+    "displayQuestion": "How many people are afraid of the dark?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 50,
+        "25-34": 43,
+        "35-44": 33,
+        "45+": 23
+      }
+    }
+  },
+  {
+    "id": "q-50",
+    "originalIndex": 50,
+    "question": "Does <FIRST_NAME> have any tattoos?",
+    "displayQuestion": "How many people have any tattoos?",
+    "emoji": "🎨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 53,
+        "25-34": 66,
+        "35-44": 64,
+        "45+": 39
+      }
+    }
+  },
+  {
+    "id": "q-77",
+    "originalIndex": 77,
+    "question": "Does <FIRST_NAME> dream about their wedding?",
+    "displayQuestion": "How many people dream about their wedding?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 35,
+        "25-34": 28,
+        "35-44": 20,
+        "45+": 9
+      }
+    }
+  },
+  {
+    "id": "q-84",
+    "originalIndex": 84,
+    "question": "Does <FIRST_NAME> hold grudges?",
+    "displayQuestion": "How many people hold grudges?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 42,
+        "25-34": 29,
+        "35-44": 25,
+        "45+": 17
+      }
+    }
+  },
+  {
+    "id": "q-116",
+    "originalIndex": 116,
+    "question": "Does <FIRST_NAME> have more than $10k in their bank account?",
+    "displayQuestion": "How many people have more than $10k in their bank account?",
+    "emoji": "💰",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 62,
+        "25-34": 49,
+        "35-44": 43,
+        "45+": 37
+      }
+    }
+  },
+  {
+    "id": "q-134",
+    "originalIndex": 134,
+    "question": "Has <FIRST_NAME> thought about someone else during sex?",
+    "displayQuestion": "How many people have thought about someone else during sex?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 42,
+        "25-34": 58,
+        "35-44": 67,
+        "45+": 55
+      }
+    }
+  },
+  {
+    "id": "q-137",
+    "originalIndex": 137,
+    "question": "Does <FIRST_NAME> have a friend they don't like?",
+    "displayQuestion": "How many people have a friend they don't like?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 49,
+        "25-34": 26,
+        "35-44": 25,
+        "45+": 27
+      }
+    }
+  },
+  {
+    "id": "q-48",
+    "originalIndex": 48,
+    "question": "Has <FIRST_NAME> had sex in public?",
+    "displayQuestion": "How many people have had sex in public?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 40,
+        "25-34": 59,
+        "35-44": 63,
+        "45+": 39
+      }
+    }
+  },
+  {
+    "id": "q-54",
+    "originalIndex": 54,
+    "question": "Has <FIRST_NAME> ever failed a class?",
+    "displayQuestion": "How many people have ever failed a class?",
+    "emoji": "📚",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 61,
+        "25-34": 76,
+        "35-44": 71,
+        "45+": 52
+      }
+    }
+  },
+  {
+    "id": "q-70",
+    "originalIndex": 70,
+    "question": "Has <FIRST_NAME> hooked up with a total stranger?",
+    "displayQuestion": "How many people have hooked up with a total stranger?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 58,
+        "25-34": 79,
+        "35-44": 82,
+        "45+": 59
+      }
+    }
+  },
+  {
+    "id": "q-131",
+    "originalIndex": 131,
+    "question": "Is <FIRST_NAME> always late?",
+    "displayQuestion": "How many people are always late?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 36,
+        "25-34": 26,
+        "35-44": 18,
+        "45+": 13
+      }
+    }
+  },
+  {
+    "id": "q-71",
+    "originalIndex": 71,
+    "question": "Does <FIRST_NAME> want a friend with benefits?",
+    "displayQuestion": "How many people want a friend with benefits?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 66,
+        "25-34": 48,
+        "35-44": 46,
+        "45+": 43
+      }
+    }
+  },
+  {
+    "id": "q-9",
+    "originalIndex": 9,
+    "question": "Does <FIRST_NAME> have pets?",
+    "displayQuestion": "How many people have pets?",
+    "emoji": "🐾",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 69,
+        "25-34": 49,
+        "35-44": 48,
+        "45+": 46
+      }
+    }
+  },
+  {
+    "id": "q-74",
+    "originalIndex": 74,
+    "question": "Has <FIRST_NAME> made someone breakfast in bed?",
+    "displayQuestion": "How many people have made someone breakfast in bed?",
+    "emoji": "🍕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 56,
+        "25-34": 66,
+        "35-44": 73,
+        "45+": 79
+      }
+    }
+  },
+  {
+    "id": "q-123",
+    "originalIndex": 123,
+    "question": "Has <FIRST_NAME> finished a book in the past year?",
+    "displayQuestion": "How many people have finished a book in the past year?",
+    "emoji": "📚",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 58,
+        "25-34": 69,
+        "35-44": 73,
+        "45+": 81
+      }
+    }
+  },
+  {
+    "id": "q-20",
+    "originalIndex": 20,
+    "question": "Has <FIRST_NAME> ever had to run from the police?",
+    "displayQuestion": "How many people have ever had to run from the police?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 32,
+        "25-34": 18,
+        "35-44": 20,
+        "45+": 10
+      }
+    }
+  },
+  {
+    "id": "q-97",
+    "originalIndex": 97,
+    "question": "Does <FIRST_NAME> use nicotine?",
+    "displayQuestion": "How many people use nicotine?",
+    "emoji": "🍷",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 36,
+        "25-34": 22,
+        "35-44": 21,
+        "45+": 14
+      }
+    }
+  },
+  {
+    "id": "q-10",
+    "originalIndex": 10,
+    "question": "Has <FIRST_NAME> tried any drugs?",
+    "displayQuestion": "How many people have tried any drugs?",
+    "emoji": "🍷",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 25,
+        "25-34": 44,
+        "35-44": 44,
+        "45+": 22
+      }
+    }
+  },
+  {
+    "id": "q-118",
+    "originalIndex": 118,
+    "question": "Has <FIRST_NAME> had a near-death experience?",
+    "displayQuestion": "How many people have had a near-death experience?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 51,
+        "25-34": 36,
+        "35-44": 40,
+        "45+": 30
+      }
+    }
+  },
+  {
+    "id": "q-46",
+    "originalIndex": 46,
+    "question": "Has <FIRST_NAME> ever gotten wasted on a date?",
+    "displayQuestion": "How many people have ever gotten wasted on a date?",
+    "emoji": "🍷",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 20,
+        "25-34": 37,
+        "35-44": 41,
+        "45+": 38
+      }
+    }
+  },
+  {
+    "id": "q-69",
+    "originalIndex": 69,
+    "question": "Does <FIRST_NAME> have any bad habits?",
+    "displayQuestion": "How many people have any bad habits?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 89,
+        "25-34": 88,
+        "35-44": 85,
+        "45+": 68
+      }
+    }
+  },
+  {
+    "id": "q-1",
+    "originalIndex": 1,
+    "question": "Does <FIRST_NAME> have a driving license?",
+    "displayQuestion": "How many people have a driving license?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 78,
+        "25-34": 95,
+        "35-44": 95,
+        "45+": 99
+      }
+    }
+  },
+  {
+    "id": "q-44",
+    "originalIndex": 44,
+    "question": "Does <FIRST_NAME> cheat in games?",
+    "displayQuestion": "How many people cheat in games?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 33,
+        "25-34": 17,
+        "35-44": 13,
+        "45+": 13
+      }
+    }
+  },
+  {
+    "id": "q-31",
+    "originalIndex": 31,
+    "question": "Does <FIRST_NAME> play video games?",
+    "displayQuestion": "How many people play video games?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 40,
+        "25-34": 34,
+        "35-44": 29,
+        "45+": 20
+      }
+    }
+  },
+  {
+    "id": "q-105",
+    "originalIndex": 105,
+    "question": "Does <FIRST_NAME> believe in horoscopes?",
+    "displayQuestion": "How many people believe in horoscopes?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 45,
+        "35-44": 46,
+        "45+": 51
+      }
+    }
+  },
+  {
+    "id": "q-110",
+    "originalIndex": 110,
+    "question": "Does <FIRST_NAME> think age matters in a relationship?",
+    "displayQuestion": "How many people think age matters in a relationship?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 63,
+        "25-34": 51,
+        "35-44": 43,
+        "45+": 53
+      }
+    }
+  },
+  {
+    "id": "q-125",
+    "originalIndex": 125,
+    "question": "Would <FIRST_NAME> change anything about their body?",
+    "displayQuestion": "How many people would change anything about their body?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 77,
+        "25-34": 69,
+        "35-44": 69,
+        "45+": 57
+      }
+    }
+  },
+  {
+    "id": "q-22",
+    "originalIndex": 22,
+    "question": "Would <FIRST_NAME> like to know when they are going to die?",
+    "displayQuestion": "How many people would like to know when they are going to die?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 24,
+        "25-34": 16,
+        "35-44": 9,
+        "45+": 5
+      }
+    }
+  },
+  {
+    "id": "q-90",
+    "originalIndex": 90,
+    "question": "Is <FIRST_NAME> a Type A person?",
+    "displayQuestion": "How many people are a Type A person?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 32,
+        "25-34": 34,
+        "35-44": 48,
+        "45+": 51
+      }
+    }
+  },
+  {
+    "id": "q-7",
+    "originalIndex": 7,
+    "question": "Is <FIRST_NAME> afraid of ghosts?",
+    "displayQuestion": "How many people are afraid of ghosts?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 40,
+        "25-34": 37,
+        "35-44": 27,
+        "45+": 21
+      }
+    }
+  },
+  {
+    "id": "q-60",
+    "originalIndex": 60,
+    "question": "Does <FIRST_NAME> have an unusual talent?",
+    "displayQuestion": "How many people have an unusual talent?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 48,
+        "25-34": 39,
+        "35-44": 35,
+        "45+": 29
+      }
+    }
+  },
+  {
+    "id": "q-2",
+    "originalIndex": 2,
+    "question": "Does <FIRST_NAME> like pineapple on pizza?",
+    "displayQuestion": "How many people like pineapple on pizza?",
+    "emoji": "🍕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 48,
+        "25-34": 58,
+        "35-44": 67,
+        "45+": 67
+      }
+    }
+  },
+  {
+    "id": "q-108",
+    "originalIndex": 108,
+    "question": "Does <FIRST_NAME> believe in life after death?",
+    "displayQuestion": "How many people believe in life after death?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 57,
+        "25-34": 61,
+        "35-44": 66,
+        "45+": 76
+      }
+    }
+  },
+  {
+    "id": "q-38",
+    "originalIndex": 38,
+    "question": "Has <FIRST_NAME> ever stolen anything?",
+    "displayQuestion": "How many people have ever stolen anything?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 73,
+        "25-34": 69,
+        "35-44": 69,
+        "45+": 54
+      }
+    }
+  },
+  {
+    "id": "q-15",
+    "originalIndex": 15,
+    "question": "Has <FIRST_NAME> been on a terrible date?",
+    "displayQuestion": "How many people have been on a terrible date?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 57,
+        "25-34": 72,
+        "35-44": 76,
+        "45+": 75
+      }
+    }
+  },
+  {
+    "id": "q-55",
+    "originalIndex": 55,
+    "question": "Is <FIRST_NAME> successful?",
+    "displayQuestion": "How many people are successful?",
+    "emoji": "💼",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 76,
+        "25-34": 88,
+        "35-44": 90,
+        "45+": 95
+      }
+    }
+  },
+  {
+    "id": "q-100",
+    "originalIndex": 100,
+    "question": "Has <FIRST_NAME> tried BDSM?",
+    "displayQuestion": "How many people have tried BDSM?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [
+      "spicy"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 20,
+        "25-34": 29,
+        "35-44": 23,
+        "45+": 11
+      }
+    }
+  },
+  {
+    "id": "q-56",
+    "originalIndex": 56,
+    "question": "Does <FIRST_NAME> have a fetish?",
+    "displayQuestion": "How many people have a fetish?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 34,
+        "25-34": 36,
+        "35-44": 30,
+        "45+": 18
+      }
+    }
+  },
+  {
+    "id": "q-101",
+    "originalIndex": 101,
+    "question": "Does <FIRST_NAME> have a sexual fantasy?",
+    "displayQuestion": "How many people have a sexual fantasy?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 59,
+        "25-34": 74,
+        "35-44": 77,
+        "45+": 66
+      }
+    }
+  },
+  {
+    "id": "q-47",
+    "originalIndex": 47,
+    "question": "Does <FIRST_NAME> regret anything?",
+    "displayQuestion": "How many people regret anything?",
+    "emoji": "📋",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 90,
+        "25-34": 81,
+        "35-44": 76,
+        "45+": 72
+      }
+    }
+  },
+  {
+    "id": "q-41",
+    "originalIndex": 41,
+    "question": "Has <FIRST_NAME> made out with a stranger?",
+    "displayQuestion": "How many people have made out with a stranger?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 80,
+        "25-34": 93,
+        "35-44": 91,
+        "45+": 76
+      }
+    }
+  },
+  {
+    "id": "q-65",
+    "originalIndex": 65,
+    "question": "Does <FIRST_NAME> cook food?",
+    "displayQuestion": "How many people cook food?",
+    "emoji": "🍕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 80,
+        "25-34": 92,
+        "35-44": 94,
+        "45+": 96
+      }
+    }
+  },
+  {
+    "id": "q-12",
+    "originalIndex": 12,
+    "question": "Does <FIRST_NAME> think workplace dating is wrong?",
+    "displayQuestion": "How many people think workplace dating is wrong?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 11,
+        "25-34": 12,
+        "35-44": 20,
+        "45+": 26
+      }
+    }
+  },
+  {
+    "id": "q-73",
+    "originalIndex": 73,
+    "question": "Has <FIRST_NAME> dumped someone over text message?",
+    "displayQuestion": "How many people have dumped someone over text message?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 39,
+        "25-34": 30,
+        "35-44": 29,
+        "45+": 24
+      }
+    }
+  },
+  {
+    "id": "q-53",
+    "originalIndex": 53,
+    "question": "Has <FIRST_NAME> ever been skinny dipping?",
+    "displayQuestion": "How many people have ever been skinny dipping?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 40,
+        "25-34": 54,
+        "35-44": 48,
+        "45+": 40
+      }
+    }
+  },
+  {
+    "id": "q-122",
+    "originalIndex": 122,
+    "question": "Has <FIRST_NAME> had Covid-19?",
+    "displayQuestion": "How many people have had Covid-19?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 77,
+        "25-34": 71,
+        "35-44": 69,
+        "45+": 63
+      }
+    }
+  },
+  {
+    "id": "q-88",
+    "originalIndex": 88,
+    "question": "Does <FIRST_NAME> like their job?",
+    "displayQuestion": "How many people like their job?",
+    "emoji": "💼",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 82,
+        "25-34": 94,
+        "35-44": 92,
+        "45+": 96
+      }
+    }
+  },
+  {
+    "id": "q-33",
+    "originalIndex": 33,
+    "question": "Does <FIRST_NAME> have any allergies?",
+    "displayQuestion": "How many people have any allergies?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 45,
+        "25-34": 46,
+        "35-44": 46,
+        "45+": 33
+      }
+    }
+  },
+  {
+    "id": "q-87",
+    "originalIndex": 87,
+    "question": "Does <FIRST_NAME> have a bucket list?",
+    "displayQuestion": "How many people have a bucket list?",
+    "emoji": "📋",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 62,
+        "25-34": 56,
+        "35-44": 52,
+        "45+": 49
+      }
+    }
+  },
+  {
+    "id": "q-121",
+    "originalIndex": 121,
+    "question": "Has <FIRST_NAME> passed out when drinking?",
+    "displayQuestion": "How many people have passed out when drinking?",
+    "emoji": "🍷",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 58,
+        "25-34": 68,
+        "35-44": 66,
+        "45+": 55
+      }
+    }
+  },
+  {
+    "id": "q-94",
+    "originalIndex": 94,
+    "question": "Is <FIRST_NAME> afraid of anything?",
+    "displayQuestion": "How many people are afraid of anything?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 95,
+        "25-34": 95,
+        "35-44": 91,
+        "45+": 83
+      }
+    }
+  },
+  {
+    "id": "q-58",
+    "originalIndex": 58,
+    "question": "Is <FIRST_NAME> flexible?",
+    "displayQuestion": "How many people are flexible?",
+    "emoji": "💪",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 61,
+        "25-34": 60,
+        "35-44": 60,
+        "45+": 71
+      }
+    }
+  },
+  {
+    "id": "q-99",
+    "originalIndex": 99,
+    "question": "Is <FIRST_NAME> ambitious?",
+    "displayQuestion": "How many people are ambitious?",
+    "emoji": "💼",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 81,
+        "25-34": 92,
+        "35-44": 91,
+        "45+": 84
+      }
+    }
+  },
+  {
+    "id": "q-109",
+    "originalIndex": 109,
+    "question": "Is <FIRST_NAME> a virgin?",
+    "displayQuestion": "How many people are virgins?",
+    "emoji": "🔒",
+    "headline": null,
+    "tags": [
+      "spicy"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 12,
+        "25-34": 2,
+        "35-44": 2,
+        "45+": 3
+      }
+    }
+  },
+  {
+    "id": "q-133",
+    "originalIndex": 133,
+    "question": "Has <FIRST_NAME> had a sexually transmitted disease (STD)?",
+    "displayQuestion": "How many people have had a sexually transmitted disease (STD)?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 4,
+        "25-34": 12,
+        "35-44": 14,
+        "45+": 9
+      }
+    }
+  },
+  {
+    "id": "q-34",
+    "originalIndex": 34,
+    "question": "Does <FIRST_NAME> play any instruments?",
+    "displayQuestion": "How many people play any instruments?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 33,
+        "25-34": 30,
+        "35-44": 28,
+        "45+": 23
+      }
+    }
+  },
+  {
+    "id": "q-113",
+    "originalIndex": 113,
+    "question": "Could <FIRST_NAME> be the president?",
+    "displayQuestion": "How many people could be the president?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 48,
+        "25-34": 39,
+        "35-44": 38,
+        "45+": 41
+      }
+    }
+  },
+  {
+    "id": "q-39",
+    "originalIndex": 39,
+    "question": "Has <FIRST_NAME> been in an accident?",
+    "displayQuestion": "How many people have been in an accident?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 67,
+        "25-34": 74,
+        "35-44": 77,
+        "45+": 70
+      }
+    }
+  },
+  {
+    "id": "q-62",
+    "originalIndex": 62,
+    "question": "Does <FIRST_NAME> workout?",
+    "displayQuestion": "How many people workout?",
+    "emoji": "💼",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 81,
+        "25-34": 83,
+        "35-44": 78,
+        "45+": 73
+      }
+    }
+  },
+  {
+    "id": "q-89",
+    "originalIndex": 89,
+    "question": "Does <FIRST_NAME> have a favorite food?",
+    "displayQuestion": "How many people have a favorite food?",
+    "emoji": "🍕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 91,
+        "25-34": 91,
+        "35-44": 88,
+        "45+": 81
+      }
+    }
+  },
+  {
+    "id": "q-25",
+    "originalIndex": 25,
+    "question": "Has <FIRST_NAME> been arrested?",
+    "displayQuestion": "How many people have been arrested?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 7,
+        "25-34": 12,
+        "35-44": 16,
+        "45+": 14
+      }
+    }
+  },
+  {
+    "id": "q-40",
+    "originalIndex": 40,
+    "question": "Has <FIRST_NAME> been in a fight?",
+    "displayQuestion": "How many people have been in a fight?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 35,
+        "35-44": 39,
+        "45+": 30
+      }
+    }
+  },
+  {
+    "id": "q-23",
+    "originalIndex": 23,
+    "question": "Does <FIRST_NAME> like kids?",
+    "displayQuestion": "How many people like kids?",
+    "emoji": "👶",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 88,
+        "25-34": 93,
+        "35-44": 97,
+        "45+": 97
+      }
+    }
+  },
+  {
+    "id": "q-136",
+    "originalIndex": 136,
+    "question": "Has <FIRST_NAME> stolen money from a friend?",
+    "displayQuestion": "How many people have stolen money from a friend?",
+    "emoji": "🚨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 9,
+        "25-34": 3,
+        "35-44": 5,
+        "45+": 1
+      }
+    }
+  },
+  {
+    "id": "q-117",
+    "originalIndex": 117,
+    "question": "Has <FIRST_NAME> run a marathon?",
+    "displayQuestion": "How many people have run a marathon?",
+    "emoji": "💪",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 15,
+        "25-34": 7,
+        "35-44": 12,
+        "45+": 9
+      }
+    }
+  },
+  {
+    "id": "q-27",
+    "originalIndex": 27,
+    "question": "Would <FIRST_NAME> like to live forever?",
+    "displayQuestion": "How many people would like to live forever?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 14,
+        "25-34": 22,
+        "35-44": 18,
+        "45+": 15
+      }
+    }
+  },
+  {
+    "id": "q-4",
+    "originalIndex": 4,
+    "question": "Does <FIRST_NAME> think long-distance relationships work?",
+    "displayQuestion": "How many people think long-distance relationships work?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 46,
+        "25-34": 45,
+        "35-44": 39,
+        "45+": 47
+      }
+    }
+  },
+  {
+    "id": "q-63",
+    "originalIndex": 63,
+    "question": "Does <FIRST_NAME> have any superstitions?",
+    "displayQuestion": "How many people have any superstitions?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 39,
+        "25-34": 47,
+        "35-44": 45,
+        "45+": 39
+      }
+    }
+  },
+  {
+    "id": "q-52",
+    "originalIndex": 52,
+    "question": "Has <FIRST_NAME> broken any bones?",
+    "displayQuestion": "How many people have broken any bones?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 45,
+        "25-34": 49,
+        "35-44": 52,
+        "45+": 53
+      }
+    }
+  },
+  {
+    "id": "q-32",
+    "originalIndex": 32,
+    "question": "Does <FIRST_NAME> watch sports?",
+    "displayQuestion": "How many people watch sports?",
+    "emoji": "💪",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 58,
+        "25-34": 50,
+        "35-44": 52,
+        "45+": 56
+      }
+    }
+  },
+  {
+    "id": "q-104",
+    "originalIndex": 104,
+    "question": "Does <FIRST_NAME> sleep naked?",
+    "displayQuestion": "How many people sleep naked?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 54,
+        "25-34": 53,
+        "35-44": 46,
+        "45+": 47
+      }
+    }
+  },
+  {
+    "id": "q-128",
+    "originalIndex": 128,
+    "question": "Has <FIRST_NAME> had their teeth fixed?",
+    "displayQuestion": "How many people have had their teeth fixed?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 57,
+        "25-34": 60,
+        "35-44": 63,
+        "45+": 65
+      }
+    }
+  },
+  {
+    "id": "q-130",
+    "originalIndex": 130,
+    "question": "Does <FIRST_NAME> care where they sit on an airplane?",
+    "displayQuestion": "How many people care where they sit on an airplane?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 68,
+        "25-34": 70,
+        "35-44": 62,
+        "45+": 62
+      }
+    }
+  },
+  {
+    "id": "q-28",
+    "originalIndex": 28,
+    "question": "Has <FIRST_NAME> ever failed a test?",
+    "displayQuestion": "How many people have ever failed a test?",
+    "emoji": "📚",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 84,
+        "25-34": 88,
+        "35-44": 87,
+        "45+": 80
+      }
+    }
+  },
+  {
+    "id": "q-107",
+    "originalIndex": 107,
+    "question": "Has <FIRST_NAME> fired a gun?",
+    "displayQuestion": "How many people have fired a gun?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 38,
+        "25-34": 45,
+        "35-44": 45,
+        "45+": 40
+      }
+    }
+  },
+  {
+    "id": "q-0",
+    "originalIndex": 0,
+    "question": "Does <FIRST_NAME> like ice cream?",
+    "displayQuestion": "How many people like ice cream?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 96,
+        "25-34": 94,
+        "35-44": 89,
+        "45+": 89
+      }
+    }
+  },
+  {
+    "id": "q-76",
+    "originalIndex": 76,
+    "question": "Is <FIRST_NAME> a player?",
+    "displayQuestion": "How many people are a player?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 13,
+        "25-34": 14,
+        "35-44": 19,
+        "45+": 19
+      }
+    }
+  },
+  {
+    "id": "q-98",
+    "originalIndex": 98,
+    "question": "Has <FIRST_NAME> talked dirty to anyone?",
+    "displayQuestion": "How many people have talked dirty to anyone?",
+    "emoji": "🔥",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 86,
+        "25-34": 90,
+        "35-44": 92,
+        "45+": 87
+      }
+    }
+  },
+  {
+    "id": "q-6",
+    "originalIndex": 6,
+    "question": "Does <FIRST_NAME> believe climate change is real?",
+    "displayQuestion": "How many people believe climate change is real?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 90,
+        "25-34": 95,
+        "35-44": 90,
+        "45+": 89
+      }
+    }
+  },
+  {
+    "id": "q-129",
+    "originalIndex": 129,
+    "question": "Is <FIRST_NAME> scared of heights?",
+    "displayQuestion": "How many people are scared of heights?",
+    "emoji": "😨",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 55,
+        "25-34": 56,
+        "35-44": 60,
+        "45+": 55
+      }
+    }
+  },
+  {
+    "id": "q-103",
+    "originalIndex": 103,
+    "question": "Does <FIRST_NAME> believe vaccines work?",
+    "displayQuestion": "How many people believe vaccines work?",
+    "emoji": "💼",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 91,
+        "25-34": 94,
+        "35-44": 92,
+        "45+": 89
+      }
+    }
+  },
+  {
+    "id": "q-126",
+    "originalIndex": 126,
+    "question": "Has <FIRST_NAME> ever been bungee jumping?",
+    "displayQuestion": "How many people have ever been bungee jumping?",
+    "emoji": "✈️",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 4,
+        "25-34": 4,
+        "35-44": 8,
+        "45+": 6
+      }
+    }
+  },
+  {
+    "id": "q-61",
+    "originalIndex": 61,
+    "question": "Does <FIRST_NAME> think a hot dog is a sandwich?",
+    "displayQuestion": "How many people think a hot dog is a sandwich?",
+    "emoji": "🐾",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 10,
+        "25-34": 7,
+        "35-44": 7,
+        "45+": 6
+      }
+    }
+  },
+  {
+    "id": "q-127",
+    "originalIndex": 127,
+    "question": "Has <FIRST_NAME> ever gone parachuting?",
+    "displayQuestion": "How many people have ever gone parachuting?",
+    "emoji": "✈️",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 5,
+        "25-34": 8,
+        "35-44": 6,
+        "45+": 4
+      }
+    }
+  },
+  {
+    "id": "q-92",
+    "originalIndex": 92,
+    "question": "Is <FIRST_NAME> spontaneous?",
+    "displayQuestion": "How many people are spontaneous?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 84,
+        "25-34": 86,
+        "35-44": 85,
+        "45+": 82
+      }
+    }
+  },
+  {
+    "id": "q-85",
+    "originalIndex": 85,
+    "question": "Is <FIRST_NAME> adventurous?",
+    "displayQuestion": "How many people are adventurous?",
+    "emoji": "✈️",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 91,
+        "25-34": 94,
+        "35-44": 90,
+        "45+": 92
+      }
+    }
+  },
+  {
+    "id": "q-114",
+    "originalIndex": 114,
+    "question": "Does <FIRST_NAME> hate dogs?",
+    "displayQuestion": "How many people hate dogs?",
+    "emoji": "🐾",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 3,
+        "25-34": 2,
+        "35-44": 3,
+        "45+": 5
+      }
+    }
+  },
+  {
+    "id": "q-106",
+    "originalIndex": 106,
+    "question": "Does <FIRST_NAME> think an egg salad is a chicken salad?",
+    "displayQuestion": "How many people think an egg salad is a chicken salad?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 11,
+        "25-34": 9,
+        "35-44": 12,
+        "45+": 11
+      }
+    }
+  },
+  {
+    "id": "q-124",
+    "originalIndex": 124,
+    "question": "Is <FIRST_NAME> a good singer?",
+    "displayQuestion": "How many people are a good singer?",
+    "emoji": "🎮",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 31,
+        "25-34": 32,
+        "35-44": 33,
+        "45+": 34
+      }
+    }
+  },
+  {
+    "id": "q-67",
+    "originalIndex": 67,
+    "question": "Is <FIRST_NAME> a good kisser?",
+    "displayQuestion": "How many people are a good kisser?",
+    "emoji": "💕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 96,
+        "25-34": 97,
+        "35-44": 98,
+        "45+": 99
+      }
+    }
+  },
+  {
+    "id": "q-30",
+    "originalIndex": 30,
+    "question": "Is <FIRST_NAME> an only child?",
+    "displayQuestion": "How many people are an only child?",
+    "emoji": "👶",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 5,
+        "25-34": 6,
+        "35-44": 5,
+        "45+": 4
+      }
+    }
+  },
+  {
+    "id": "q-96",
+    "originalIndex": 96,
+    "question": "Does <FIRST_NAME> drink?",
+    "displayQuestion": "How many people drink alcohol?",
+    "emoji": "🍺",
+    "headline": null,
+    "tags": [
+      "mainstream"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 87,
+        "25-34": 87,
+        "35-44": 85,
+        "45+": 87
+      }
+    }
+  },
+  {
+    "id": "q-86",
+    "originalIndex": 86,
+    "question": "Does <FIRST_NAME> like receiving gifts?",
+    "displayQuestion": "How many people like receiving gifts?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 94,
+        "25-34": 95,
+        "35-44": 95,
+        "45+": 96
+      }
+    }
+  },
+  {
+    "id": "q-11",
+    "originalIndex": 11,
+    "question": "Does <FIRST_NAME> think the earth is flat?",
+    "displayQuestion": "How many people think the earth is flat?",
+    "emoji": "🌍",
+    "headline": null,
+    "tags": [
+      "niche"
+    ],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 3,
+        "25-34": 2,
+        "35-44": 2,
+        "45+": 2
+      }
+    }
+  },
+  {
+    "id": "q-19",
+    "originalIndex": 19,
+    "question": "Is <FIRST_NAME> vegan?",
+    "displayQuestion": "How many people are vegan?",
+    "emoji": "🍕",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 2,
+        "25-34": 3,
+        "35-44": 2,
+        "45+": 2
+      }
+    }
+  },
+  {
+    "id": "q-66",
+    "originalIndex": 66,
+    "question": "Does <FIRST_NAME> like going to concerts?",
+    "displayQuestion": "How many people like going to concerts?",
+    "emoji": "💬",
+    "headline": null,
+    "tags": [],
+    "featured": false,
+    "slices": {
+      "all": {
+        "18-24": 96,
+        "25-34": 96,
+        "35-44": 96,
+        "45+": 96
+      }
+    }
+  }
+]

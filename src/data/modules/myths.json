@@ -1,0 +1,49 @@
+[
+  {
+    "id": "myth-10-90-likes",
+    "title": "The 10/90 Rule",
+    "subtitle": "Do 10% of users really get 90% of the likes?",
+    "claim": "10% of dating app users receive 90% of all likes.",
+    "verdict": "partly-true",
+    "explanation": "The reality follows a power-law distribution, but the numbers are not quite as dramatic as the meme suggests. Our data shows the top 10% of profiles receive roughly 58% of all likes. Still wildly unequal, but the viral 90% figure is an exaggeration born from a single OkCupid blog post in 2009. The inequality is real; the specific ratio is not.",
+    "category": "apps",
+    "supportingStats": [
+      { "label": "Likes received by top 10%", "value": "58%" },
+      { "label": "Likes received by bottom 50%", "value": "8%" },
+      { "label": "Gini coefficient of like distribution", "value": "0.73" }
+    ],
+    "source": "Smitten Data Analysis 2026"
+  },
+  {
+    "id": "myth-less-attractive-irl",
+    "title": "The Catfish Effect",
+    "subtitle": "Are people less attractive in real life than their photos?",
+    "claim": "People are generally less attractive in real life than they appear in their dating profile photos.",
+    "verdict": "busted",
+    "explanation": "Surprise: most people actually look about the same or better in person. In a study where participants rated attractiveness before and after meeting, 62% of dates were rated as attractive or more attractive than expected. The dreaded let-down? It happens just 17% of the time. The remaining 21% landed exactly on expectations. Our brains are just wired to expect the worst.",
+    "category": "profiles",
+    "supportingStats": [
+      { "label": "Rated more attractive in person", "value": "34%" },
+      { "label": "Matched expectations", "value": "21%" },
+      { "label": "Rated about the same", "value": "28%" },
+      { "label": "Rated less attractive", "value": "17%" }
+    ],
+    "source": "Nordic First-Date Perception Study 2025"
+  },
+  {
+    "id": "myth-height-matters",
+    "title": "The Height Hurdle",
+    "subtitle": "Does height actually matter on dating apps?",
+    "claim": "Height is a major factor in dating app success, especially for men.",
+    "verdict": "confirmed",
+    "explanation": "The numbers do not lie, and they are not kind. Men who list their height as 6'0\" (183 cm) or above receive 32% more likes than men under 5'9\" (175 cm). But before short kings despair: profiles with humor and personality-forward bios close 60% of that gap. Height opens the door, but charm walks through it.",
+    "category": "profiles",
+    "supportingStats": [
+      { "label": "Like boost for men 6'0\"+", "value": "+32%" },
+      { "label": "Gap closed by strong bios", "value": "60%" },
+      { "label": "Women who list height preference", "value": "41%" },
+      { "label": "Men who exaggerate height", "value": "22%" }
+    ],
+    "source": "Smitten Profile Performance Data 2026"
+  }
+]

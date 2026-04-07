@@ -1,0 +1,52 @@
+[
+  {
+    "id": "guess-double-texting",
+    "question": "Is double texting okay?",
+    "yes": 62,
+    "no": 38,
+    "sampleSize": 4280,
+    "takeaway": "The stigma is fading fast. Most people now see a follow-up text as enthusiasm, not desperation. The clingy label? Officially retired.",
+    "category": "texting",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "guess-no-bio",
+    "question": "Would you date someone with no bio?",
+    "yes": 23,
+    "no": 77,
+    "sampleSize": 3950,
+    "takeaway": "An empty bio is the dating-app equivalent of showing up to a job interview in pajamas. 77% of users swipe left on blank profiles without a second thought.",
+    "category": "profiles",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "guess-dating-multiple",
+    "question": "Is it okay to date multiple people at once?",
+    "yes": 54,
+    "no": 46,
+    "sampleSize": 5120,
+    "takeaway": "Slim majority rules: multi-dating is technically fine, but the margin is razor-thin. It seems everyone is okay with it until feelings get involved.",
+    "category": "culture",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "guess-text-immediately",
+    "question": "Should you text back immediately?",
+    "yes": 41,
+    "no": 59,
+    "sampleSize": 3780,
+    "takeaway": "The strategic wait is alive and well. Nearly 6 in 10 people still believe a little delay keeps things interesting. Playing it cool never fully goes out of style.",
+    "category": "texting",
+    "source": "Smitten Nordic Dating Survey 2026"
+  },
+  {
+    "id": "guess-apps-find-love",
+    "question": "Are dating apps actually a good way to find love?",
+    "yes": 67,
+    "no": 33,
+    "sampleSize": 6200,
+    "takeaway": "Two-thirds of users are believers. Despite the burnout memes and doom-swiping complaints, most people still think apps are the best shot at finding someone real.",
+    "category": "apps",
+    "source": "Smitten Nordic Dating Survey 2026"
+  }
+]
