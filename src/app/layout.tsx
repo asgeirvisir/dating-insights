@@ -10,6 +10,21 @@ export const metadata: Metadata = {
     description:
       "Data-backed stories about modern dating culture. Powered by Smitten.",
     type: "website",
+    images: [
+      {
+        url: "/images/OG.png",
+        width: 1200,
+        height: 630,
+        alt: "The unfiltered truth — Dating behavior & Insights by Smitten",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dating Insights — Bold Data on Modern Dating",
+    description:
+      "Data-backed stories about modern dating culture. Powered by Smitten.",
+    images: ["/images/OG.png"],
   },
 };
 

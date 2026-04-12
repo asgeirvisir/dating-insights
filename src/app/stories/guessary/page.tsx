@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageShell from "@/components/layout/PageShell";
 import GuessaryHero from "@/components/guessary/GuessaryHero";
+import GuessaryGame from "@/components/guessary/GuessaryGame";
 import GuessaryExplorer from "@/components/guessary/GuessaryExplorer";
 import { getGuessaryQuestions } from "@/lib/data";
 
@@ -22,6 +23,7 @@ export default async function GuessaryPage() {
   return (
     <PageShell>
       <GuessaryHero />
+      <GuessaryGame questions={questions} />
       <GuessaryExplorer questions={questions} />
     </PageShell>
   );
