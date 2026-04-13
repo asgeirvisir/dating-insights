@@ -2,13 +2,12 @@
 
 import { useRef, useState } from "react";
 import {
-  AreaChart,
-  Area,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  ReferenceDot,
 } from "recharts";
 import {
   PERCENTILE_DATA,
@@ -89,7 +88,7 @@ export default function PercentileIntervalChart() {
           <div className="flex items-center gap-5">
             <div className="flex items-center gap-2">
               <span
-                className="block h-[2px] w-4 rounded-full"
+                className="block h-3 w-3 rounded-[2px]"
                 style={{ background: "#9B00FF" }}
               />
               <span className="font-body text-[13px] tracking-wide text-white/70">
@@ -98,7 +97,7 @@ export default function PercentileIntervalChart() {
             </div>
             <div className="flex items-center gap-2">
               <span
-                className="block h-[2px] w-4 rounded-full"
+                className="block h-3 w-3 rounded-[2px]"
                 style={{ background: "#FF509B" }}
               />
               <span className="font-body text-[13px] tracking-wide text-white/70">
@@ -131,18 +130,20 @@ export default function PercentileIntervalChart() {
 
         {/* Chart */}
         <ResponsiveContainer width="100%" height={300}>
-          <AreaChart
+          <BarChart
             data={intervalData}
             margin={{ top: 8, right: 8, left: -4, bottom: 0 }}
+            barGap={2}
+            barCategoryGap="20%"
           >
             <defs>
               <linearGradient id="gradMale" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#9B00FF" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#9B00FF" stopOpacity={0.02} />
+                <stop offset="0%" stopColor="#9B00FF" stopOpacity={0.9} />
+                <stop offset="100%" stopColor="#9B00FF" stopOpacity={0.3} />
               </linearGradient>
               <linearGradient id="gradFemale" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#FF509B" stopOpacity={0.25} />
-                <stop offset="100%" stopColor="#FF509B" stopOpacity={0.02} />
+                <stop offset="0%" stopColor="#FF509B" stopOpacity={0.9} />
+                <stop offset="100%" stopColor="#FF509B" stopOpacity={0.3} />
               </linearGradient>
             </defs>
 
@@ -173,80 +174,24 @@ export default function PercentileIntervalChart() {
             />
             <Tooltip
               content={<IntervalTooltip />}
-              cursor={{
-                stroke: "rgba(255,255,255,0.08)",
-                strokeWidth: 1,
-              }}
+              cursor={{ fill: "rgba(255,255,255,0.04)" }}
             />
 
-            {/* Male area + line */}
-            <Area
-              type="natural"
+            <Bar
               dataKey="male"
-              stroke="#9B00FF"
-              strokeWidth={2}
               fill="url(#gradMale)"
+              radius={[3, 3, 0, 0]}
               isAnimationActive={false}
-              dot={false}
-              activeDot={{
-                r: 4,
-                fill: "#9B00FF",
-                stroke: "#0A0A0F",
-                strokeWidth: 2,
-              }}
             />
 
-            {/* Female area + line */}
-            <Area
-              type="natural"
+            <Bar
               dataKey="female"
-              stroke="#FF509B"
-              strokeWidth={2}
               fill="url(#gradFemale)"
+              radius={[3, 3, 0, 0]}
               isAnimationActive={false}
-              dot={false}
-              activeDot={{
-                r: 4,
-                fill: "#FF509B",
-                stroke: "#0A0A0F",
-                strokeWidth: 2,
-              }}
             />
 
-            {/* Peak label — male */}
-            <ReferenceDot
-              x={malePeak.bucket}
-              y={malePeak.male}
-              r={0}
-              label={{
-                value: `${malePeak.male}%`,
-                position: "right",
-                fill: "#c080ff",
-                fontSize: 13,
-                fontWeight: 600,
-                fontFamily: "Source Sans 3",
-                dx: 6,
-                dy: -2,
-              }}
-            />
-
-            {/* Peak label — female */}
-            <ReferenceDot
-              x={femalePeak.bucket}
-              y={femalePeak.female}
-              r={0}
-              label={{
-                value: `${femalePeak.female}%`,
-                position: "right",
-                fill: "#FF509B",
-                fontSize: 13,
-                fontWeight: 600,
-                fontFamily: "Source Sans 3",
-                dx: 6,
-                dy: -2,
-              }}
-            />
-          </AreaChart>
+          </BarChart>
         </ResponsiveContainer>
 
         {/* Insight */}

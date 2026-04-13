@@ -55,15 +55,15 @@ export default function PercentilePage() {
       <section className="mx-auto max-w-2xl px-4 py-12 sm:py-16">
         <div className="space-y-6 font-body text-base leading-relaxed text-content-secondary sm:text-lg">
           <p>
-            Not all profiles get equal attention. Our data from thousands of
+            Not all profiles get equal attention. Our data from millions of
             users across Denmark, Iceland, Norway, and Sweden reveals a stark
             pattern: the top 10% of male profiles attract nearly half of all
             likes men receive, while the top 10% of women attract about a fifth.
             In other words, a small group of men captures a disproportionately
-            large share of attention — far more so than among women.
+            large share of attention -- far more so than among women.
           </p>
           <p>
-            This isn&apos;t something dating apps engineer — it&apos;s what raw
+            This isn&apos;t something dating apps engineer -- it&apos;s what raw
             human behavior looks like. The difference comes down to how men and
             women swipe. Men tend to like broadly, spreading their attention
             across many profiles. Women are far more selective, concentrating

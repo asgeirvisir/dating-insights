@@ -36,7 +36,7 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-3 font-body text-[15px] leading-relaxed text-white/45">
-              The stuff people actually admit to in Smitten's flagship icebreaker, Guessary.
+              The stuff people actually admit to in Smitten&apos;s flagship icebreaker, Guessary.
             </p>
 
             {/* CTA */}
@@ -73,7 +73,7 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-3 font-body text-[15px] leading-relaxed text-white/45">
-              The dating game for most men is unfair. But it's not just dating apps, it's human behavior.
+              The dating game for most men is unfair. But it&apos;s not just dating apps, it&apos;s human behavior.
             </p>
 
             {/* CTA */}

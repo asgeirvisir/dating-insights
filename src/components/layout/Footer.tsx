@@ -34,15 +34,24 @@ export default function Footer() {
                 </Link>
               ))}
             </nav>
-            <p className="text-xs text-content-muted">
-              Data &amp; media inquiries:{" "}
-              <a
-                href="mailto:marketing@smitten.fun?subject=Dating%20Insights%20Inquiry"
-                className="text-content-secondary hover:text-brand-pink transition-colors duration-200 underline underline-offset-2"
+            <div className="flex items-center gap-4 text-xs text-content-muted">
+              <p>
+                Data &amp; media inquiries:{" "}
+                <a
+                  href="mailto:marketing@smitten.fun?subject=Dating%20Insights%20Inquiry"
+                  className="text-content-secondary hover:text-brand-pink transition-colors duration-200 underline underline-offset-2"
+                >
+                  marketing@smitten.fun
+                </a>
+              </p>
+              <span className="text-neutral-700">|</span>
+              <Link
+                href="/game"
+                className="text-content-muted/60 hover:text-content-muted transition-colors duration-200"
               >
-                marketing@smitten.fun
-              </a>
-            </p>
+                Play the game
+              </Link>
+            </div>
           </div>
         </div>
       </div>

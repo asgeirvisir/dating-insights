@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useRef, useState, useEffect } from "react";
+import { useId, useRef, useState } from "react";
 import {
   AreaChart,
   Area,
@@ -101,20 +101,6 @@ const GENDERS = [
   { key: "male", label: "Male", short: "M" },
   { key: "female", label: "Female", short: "F" },
 ];
-
-/* ── Hooks ── */
-
-function useIsMobile(breakpoint = 640) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
-    setIsMobile(mql.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mql.addEventListener("change", handler);
-    return () => mql.removeEventListener("change", handler);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 /* ── Derive chart state from selections ── */
 
@@ -519,7 +505,6 @@ function Legend({ labels }: { labels: [string, string] }) {
 
 function LabCard({
   question: q,
-  index,
   sliceKeyA,
   sliceKeyB,
   labelA,
@@ -529,7 +514,6 @@ function LabCard({
   isComparing,
 }: {
   question: LabQuestion;
-  index: number;
   sliceKeyA: string;
   sliceKeyB?: string;
   labelA: string;
@@ -734,11 +718,10 @@ export default function GuessaryLabCards() {
       </div>
 
       {/* Cards */}
-      {LAB_QUESTIONS.map((q, idx) => (
+      {LAB_QUESTIONS.map((q) => (
         <LabCard
           key={q.id}
           question={q}
-          index={idx}
           sliceKeyA={sliceKeyA}
           sliceKeyB={sliceKeyB}
           labelA={labelA}

@@ -18,6 +18,15 @@ export default function Toast({
 }: ToastProps) {
   const [show, setShow] = useState(false);
 
+  // Hide immediately when visible becomes false (render-time adjustment)
+  const [prevVisible, setPrevVisible] = useState(visible);
+  if (visible !== prevVisible) {
+    setPrevVisible(visible);
+    if (!visible) {
+      setShow(false);
+    }
+  }
+
   const dismiss = useCallback(() => {
     setShow(false);
     // Wait for the exit animation to finish before calling onDismiss
@@ -30,8 +39,6 @@ export default function Toast({
       requestAnimationFrame(() => setShow(true));
       const timer = setTimeout(dismiss, duration);
       return () => clearTimeout(timer);
-    } else {
-      setShow(false);
     }
   }, [visible, duration, dismiss]);
 

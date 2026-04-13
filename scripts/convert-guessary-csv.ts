@@ -244,8 +244,6 @@ const lines = csvText.split("\n").filter((l) => l.trim() !== "");
 // Skip header row (index 0)
 const dataLines = lines.slice(1);
 
-const AGE_GROUPS = ["18-24", "25-34", "35-44", "45+"];
-
 const questions: GuessaryQuestion[] = [];
 
 for (const line of dataLines) {

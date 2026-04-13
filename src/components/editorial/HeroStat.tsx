@@ -1,4 +1,4 @@
-import GradientText from "@/components/ui/GradientText";
+import Image from "next/image";
 
 export default function HeroStat() {
   return (
@@ -17,18 +17,17 @@ export default function HeroStat() {
         aria-hidden="true"
       />
 
-      {/* ─── Horizontal accent lines ─── */}
-      <div className="pointer-events-none absolute left-0 top-[30%] h-px w-full opacity-[0.06]" aria-hidden="true">
-        <div className="h-full w-full" style={{ background: "linear-gradient(90deg, transparent, #9B00FF, #FF509B, transparent)" }} />
-      </div>
-      <div className="pointer-events-none absolute left-0 bottom-[25%] h-px w-full opacity-[0.04]" aria-hidden="true">
-        <div className="h-full w-full" style={{ background: "linear-gradient(90deg, transparent, #0CC4EF, #9B00FF, transparent)" }} />
-      </div>
-
       <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
         {/* Overline */}
-        <p className="animate-fade-up font-body text-xs font-semibold uppercase tracking-[0.2em] text-white/30">
-          Powered by real data
+        <p className="animate-fade-up flex items-baseline justify-center gap-2 font-body text-xs font-semibold uppercase tracking-[0.2em] text-white/30">
+          Human behavior on dating app
+          <Image
+            src="/images/Smitten_wordmark.svg"
+            alt="Smitten"
+            width={50}
+            height={11}
+            className="relative top-[1px] brightness-0 invert opacity-30"
+          />
         </p>
 
         {/* Large editorial title — staggered per line */}
@@ -36,21 +35,13 @@ export default function HeroStat() {
           <span className="animate-fade-up delay-100 block text-[3.2rem] sm:text-[5.5rem] lg:text-[7.5rem]">
             The Unfiltered
           </span>
-          <span className="animate-fade-up delay-200 block text-[3.8rem] sm:text-[6.5rem] lg:text-[8.5rem]">
+          <span className="animate-fade-up delay-200 block text-[3.2rem] sm:text-[5.5rem] lg:text-[7.5rem]">
             Truth
           </span>
         </h1>
 
-        {/* Byline */}
-        <p className="animate-fade-up delay-400 mt-8 font-body text-lg text-content-muted sm:text-xl">
-          Human behavior on dating app{" "}
-          <GradientText as="span" variant="primary" className="font-bold">
-            Smitten
-          </GradientText>
-        </p>
-
-        {/* Subtitle */}
-        <p className="animate-fade-up delay-500 mx-auto mt-4 max-w-md font-body text-base text-content-secondary/80 sm:text-lg">
+        {/* Subheading */}
+        <p className="animate-fade-up delay-400 mt-6 font-body text-lg text-content-muted sm:text-xl">
           What millions of swipes, matches, and messages actually reveal.
         </p>
       </div>

@@ -9,7 +9,6 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  ReferenceDot,
 } from "recharts";
 
 interface AgeBreakdownChartProps {
@@ -249,25 +248,6 @@ export default function AgeBreakdownChart({
           }}
         />
 
-        {/* Value labels on all points (single mode only) */}
-        {!isComparing &&
-          chartData.map((d) => (
-            <ReferenceDot
-              key={d.ageGroup}
-              x={d.ageGroup}
-              y={d.a}
-              r={0}
-              label={{
-                value: `${d.a}%`,
-                position: "top",
-                fill: "rgba(255,255,255,0.9)",
-                fontSize: 12,
-                fontWeight: 700,
-                fontFamily: "Source Sans 3",
-                dy: -6,
-              }}
-            />
-          ))}
       </AreaChart>
     </ResponsiveContainer>
   );

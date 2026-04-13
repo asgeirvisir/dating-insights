@@ -2,7 +2,6 @@
 
 import { useRef, memo } from "react";
 import type { GuessaryQuestion } from "@/types";
-import Badge from "@/components/ui/Badge";
 import { SmittenBrandMark } from "@/components/ui/SmittenBrand";
 import ChartExportButton from "@/components/ui/ChartExportButton";
 import AgeBreakdownChart, { ChartLegend } from "./AgeBreakdownChart";
@@ -30,8 +29,7 @@ const GuessaryCard = memo(function GuessaryCard({
   isComparing,
 }: GuessaryCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const { ref: lazyRef, inView } = useInView("300px");
-  const isSpicy = question.tags.includes("spicy");
+  const { inView } = useInView("300px", cardRef);
   const hasData = Object.keys(dataA).length > 0;
 
   // Featured cards span 2 columns on tablet+ (full-width on tablet, 2-of-3 on desktop)
@@ -39,10 +37,7 @@ const GuessaryCard = memo(function GuessaryCard({
 
   return (
     <div
-      ref={(node) => {
-        (cardRef as React.MutableRefObject<HTMLDivElement | null>).current = node;
-        (lazyRef as React.MutableRefObject<HTMLDivElement | null>).current = node;
-      }}
+      ref={cardRef}
       className={`relative flex flex-col rounded-xl border border-white/[0.08] bg-[#1F1F1F] p-5 sm:p-6 ${featuredClasses} ${!hasData ? "opacity-40" : ""}`}
     >
       {/* Top row: emoji left, badge + export right — vertically aligned */}
@@ -51,11 +46,6 @@ const GuessaryCard = memo(function GuessaryCard({
           {question.emoji}
         </span>
         <div className="flex items-center gap-2">
-          {isSpicy && (
-            <Badge variant="pink">
-              🔥 Spicy
-            </Badge>
-          )}
           <ChartExportButton
             targetRef={cardRef}
             filename={`guessary-${question.id}`}
