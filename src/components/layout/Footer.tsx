@@ -21,18 +21,29 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="flex items-center gap-6">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-heading text-sm text-content-muted hover:text-content-secondary transition-colors duration-200"
+          {/* Navigation Links & Contact */}
+          <div className="flex flex-col items-center gap-4 sm:items-end">
+            <nav className="flex items-center gap-6">
+              {footerLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-heading text-sm text-content-muted hover:text-content-secondary transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+            <p className="text-xs text-content-muted">
+              Data &amp; media inquiries:{" "}
+              <a
+                href="mailto:marketing@smitten.fun?subject=Dating%20Insights%20Inquiry"
+                className="text-content-secondary hover:text-brand-pink transition-colors duration-200 underline underline-offset-2"
               >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+                marketing@smitten.fun
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
