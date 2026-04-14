@@ -68,19 +68,6 @@ const INSIGHTS: Record<string, Insight> = {
       "And then there's the number that complicates everything. Affairs increase steadily with age across the Nordics, but the gap between markets is where it gets interesting. Denmark and Norway sit at nearly double the rate of Iceland, where the number stays low across every age group. Whether that says something about culture, about honesty, or about what long relationships look like on a small island, the data doesn't say.",
     ],
   },
-  "the-nordic-divide": {
-    slug: "the-nordic-divide",
-    title: "The Nordic Divide",
-    subtitle:
-      "Same questions, different answers. Where you live in the Nordics shapes what you're willing to admit.",
-    publishedAt: "2026-04-10T09:00:00Z",
-    questionIds: [],
-    body: [
-      "Placeholder: This is where the article body will go. Replace this with the real content when ready.",
-      "Placeholder: Second paragraph of the article.",
-      "Placeholder: Third paragraph of the article.",
-    ],
-  },
 };
 
 /* ── Static params ── */

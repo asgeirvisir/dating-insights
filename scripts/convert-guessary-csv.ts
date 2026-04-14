@@ -135,69 +135,33 @@ const CURATED: Record<number, CuratedEntry> = {
 
 // ─── Default displayQuestion rewrite ─────────────────────────────────────────
 
-function rewriteDisplayQuestion(original: string): string {
-  // "Are both of <FIRST_NAME>'s ..." → "How many people's ..."
-  if (/^Are both of <FIRST_NAME>'s /i.test(original)) {
-    return original.replace(/^Are both of <FIRST_NAME>'s /i, "How many people's ");
+function rewriteDisplayQuestion(doYouForm: string): string {
+  // "Do you ..." → "How many people ..."
+  if (/^Do you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Do you /i, "How many people ");
   }
-  // "Does <FIRST_NAME> ..." → "How many people ..."
-  if (/^Does <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Does <FIRST_NAME> /i, "How many people ");
+  // "Have you ..." → "How many people have ..."
+  if (/^Have you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Have you /i, "How many people have ");
   }
-  // "Has <FIRST_NAME> ..." → "How many people have ..."
-  if (/^Has <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Has <FIRST_NAME> /i, "How many people have ");
+  // "Are you ..." → "How many people are ..."
+  if (/^Are you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Are you /i, "How many people are ");
   }
-  // "Is <FIRST_NAME> ..." → "How many people are ..."
-  if (/^Is <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Is <FIRST_NAME> /i, "How many people are ");
+  // "Would you ..." → "How many people would ..."
+  if (/^Would you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Would you /i, "How many people would ");
   }
-  // "Would <FIRST_NAME> ..." → "How many people would ..."
-  if (/^Would <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Would <FIRST_NAME> /i, "How many people would ");
+  // "Can you ..." → "How many people can ..."
+  if (/^Can you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Can you /i, "How many people can ");
   }
-  // "Can <FIRST_NAME> ..." → "How many people can ..."
-  if (/^Can <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Can <FIRST_NAME> /i, "How many people can ");
-  }
-  // "Could <FIRST_NAME> ..." → "How many people could ..."
-  if (/^Could <FIRST_NAME> /i.test(original)) {
-    return original.replace(/^Could <FIRST_NAME> /i, "How many people could ");
+  // "Could you ..." → "How many people could ..."
+  if (/^Could you /i.test(doYouForm)) {
+    return doYouForm.replace(/^Could you /i, "How many people could ");
   }
   // Fallback: return as-is
-  return original;
-}
-
-// ─── Default emoji assignment ─────────────────────────────────────────────────
-
-function assignEmoji(question: string): string {
-  const q = question.toLowerCase();
-
-  if (/sex|hook|slept|bdsm|fetish|dirty|naked/.test(q)) return "🔥";
-  if (/love|dating|relationship|crush|wedding|dumped|kiss/.test(q)) return "💕";
-  if (/drink|wasted|nicotine|drug/.test(q)) return "🍷";
-  if (/kid|child|parent/.test(q)) return "👶";
-  if (/afraid|scared|ghost|dark|die|death/.test(q)) return "😨";
-  if (/job|work|successful|ambitious/.test(q)) return "💼";
-  if (/game|video|cheat|instrument|sing/.test(q)) return "🎮";
-  if (/sport|marathon|workout|flexible/.test(q)) return "💪";
-  if (/travel|bungee|parachut|adventur/.test(q)) return "✈️";
-  if (/food|cook|vegan|pizza|breakfast|coffee/.test(q)) return "🍕";
-  if (/tattoo|piercing/.test(q)) return "🎨";
-  if (/arrest|police|stolen|crime|fight/.test(q)) return "🚨";
-  if (/money|bank|\$/.test(q)) return "💰";
-  if (/book|read|degree|class|test/.test(q)) return "📚";
-  if (/pet|dog/.test(q)) return "🐾";
-  if (/phone|iphone/.test(q)) return "📱";
-  if (/bucket|regret/.test(q)) return "📋";
-
-  return "💬";
-}
-
-// ─── Parse percentage string ──────────────────────────────────────────────────
-
-function parsePct(raw: string): number {
-  return parseInt(raw.replace("%", "").trim(), 10);
+  return doYouForm;
 }
 
 // ─── Parse CSV (simple, no external deps) ────────────────────────────────────
@@ -212,7 +176,6 @@ function parseCSVLine(line: string): string[] {
 
     if (char === '"') {
       if (inQuotes && line[i + 1] === '"') {
-        // Escaped quote inside quoted field
         current += '"';
         i++;
       } else {
@@ -229,10 +192,91 @@ function parseCSVLine(line: string): string[] {
   return result;
 }
 
+// ─── Aggregation helpers ─────────────────────────────────────────────────────
+
+interface RawRow {
+  country: string;
+  ageGroup: string;
+  gender: string;
+  questionId: number;
+  totalUsers: number;
+  usersYes: number;
+  pctYes: number;
+  doYou: string;
+  emoji: string;
+}
+
+const AGE_GROUPS = ["18-24", "25-34", "35-44", "45+"];
+const COUNTRIES = ["denmark", "iceland", "norway", "sweden"];
+const GENDERS = ["male", "female"];
+
+function buildSlices(
+  rows: RawRow[]
+): Record<string, Record<string, number>> {
+  const slices: Record<string, Record<string, number>> = {};
+
+  // Helper: compute weighted average pct for a filtered set of rows, grouped by age
+  function computeAgeSlice(
+    filtered: RawRow[]
+  ): Record<string, number> {
+    const result: Record<string, number> = {};
+    for (const age of AGE_GROUPS) {
+      const ageRows = filtered.filter((r) => r.ageGroup === age);
+      if (ageRows.length === 0) continue;
+      const totalUsers = ageRows.reduce((s, r) => s + r.totalUsers, 0);
+      const totalYes = ageRows.reduce((s, r) => s + r.usersYes, 0);
+      result[age] =
+        totalUsers > 0 ? Math.round((totalYes / totalUsers) * 100) : 0;
+    }
+    return result;
+  }
+
+  // all (all countries, all genders)
+  slices["all"] = computeAgeSlice(rows);
+
+  // Per country (all genders)
+  for (const country of COUNTRIES) {
+    const filtered = rows.filter((r) => r.country === country);
+    if (filtered.length > 0) {
+      slices[country] = computeAgeSlice(filtered);
+    }
+  }
+
+  // Per gender (all countries)
+  for (const gender of GENDERS) {
+    const filtered = rows.filter((r) => r.gender === gender);
+    if (filtered.length > 0) {
+      slices[`all_${gender}`] = computeAgeSlice(filtered);
+    }
+  }
+
+  // Per country + gender
+  for (const country of COUNTRIES) {
+    for (const gender of GENDERS) {
+      const filtered = rows.filter(
+        (r) => r.country === country && r.gender === gender
+      );
+      if (filtered.length > 0) {
+        slices[`${country}_${gender}`] = computeAgeSlice(filtered);
+      }
+    }
+  }
+
+  // "Rest of" slices (all countries except one, all genders)
+  for (const country of COUNTRIES) {
+    const filtered = rows.filter((r) => r.country !== country);
+    if (filtered.length > 0) {
+      slices[`rest_${country}`] = computeAgeSlice(filtered);
+    }
+  }
+
+  return slices;
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 const CSV_PATH =
-  "/Users/asgeirvisir/Downloads/Smitten Guessary spurningar-Blö - Sheet1.csv";
+  "/Users/asgeirvisir/Downloads/smitten_guessary_combined_apr13.csv";
 const OUT_PATH = path.join(
   __dirname,
   "../src/data/modules/guessaryQuestions.json"
@@ -241,46 +285,65 @@ const OUT_PATH = path.join(
 const csvText = fs.readFileSync(CSV_PATH, "utf-8");
 const lines = csvText.split("\n").filter((l) => l.trim() !== "");
 
-// Skip header row (index 0)
+// Skip header row
 const dataLines = lines.slice(1);
 
-const questions: GuessaryQuestion[] = [];
-
+// Parse all rows
+const allRows: RawRow[] = [];
 for (const line of dataLines) {
   const cols = parseCSVLine(line);
-  if (cols.length < 6) continue;
+  if (cols.length < 13) continue;
 
-  const originalIndex = parseInt(cols[0].trim(), 10);
-  const questionText = cols[1].trim();
-  const pct1824 = parsePct(cols[2]);
-  const pct2534 = parsePct(cols[3]);
-  const pct3544 = parsePct(cols[4]);
-  const pct45p = parsePct(cols[5]);
+  const doYou = cols[10].trim();
+  const emoji = cols[12].trim();
 
-  const curated = CURATED[originalIndex];
+  // Skip questions with no text (e.g. IDs 366+)
+  if (!doYou) continue;
+
+  allRows.push({
+    country: cols[0].trim().toLowerCase(),
+    ageGroup: cols[1].trim(),
+    gender: cols[2].trim().toLowerCase(),
+    questionId: parseInt(cols[3].trim(), 10),
+    totalUsers: parseInt(cols[4].trim(), 10),
+    usersYes: parseInt(cols[5].trim(), 10),
+    pctYes: parseFloat(cols[6].trim()),
+    doYou,
+    emoji,
+  });
+}
+
+// Group by question ID
+const groupedById = new Map<number, RawRow[]>();
+for (const row of allRows) {
+  if (!groupedById.has(row.questionId)) {
+    groupedById.set(row.questionId, []);
+  }
+  groupedById.get(row.questionId)!.push(row);
+}
+
+// Build questions
+const questions: GuessaryQuestion[] = [];
+
+for (const [questionId, rows] of groupedById) {
+  const first = rows[0];
+  const curated = CURATED[questionId];
 
   const displayQuestion = curated
     ? curated.displayQuestion
-    : rewriteDisplayQuestion(questionText);
+    : rewriteDisplayQuestion(first.doYou);
 
-  const emoji = curated ? curated.emoji : assignEmoji(questionText);
+  const emoji = curated ? curated.emoji : first.emoji;
   const headline = curated ? curated.headline : null;
   const tags = curated ? curated.tags : [];
   const featured = curated ? curated.featured : false;
 
-  const slices: Record<string, Record<string, number>> = {
-    all: {
-      "18-24": pct1824,
-      "25-34": pct2534,
-      "35-44": pct3544,
-      "45+": pct45p,
-    },
-  };
+  const slices = buildSlices(rows);
 
   questions.push({
-    id: `q-${originalIndex}`,
-    originalIndex,
-    question: questionText,
+    id: `q-${questionId}`,
+    originalIndex: questionId,
+    question: first.doYou,
     displayQuestion,
     emoji,
     headline,
@@ -297,20 +360,20 @@ function maxSpread(q: GuessaryQuestion): number {
   return Math.max(...vals) - Math.min(...vals);
 }
 
-const featured = questions.filter((q) => q.featured);
+const featuredQs = questions.filter((q) => q.featured);
 const nonFeatured = questions
   .filter((q) => !q.featured)
   .sort((a, b) => maxSpread(b) - maxSpread(a));
 
-const sorted = [...featured, ...nonFeatured];
+const sorted = [...featuredQs, ...nonFeatured];
 
 // ─── Write output ─────────────────────────────────────────────────────────────
 
 fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
 fs.writeFileSync(OUT_PATH, JSON.stringify(sorted, null, 2), "utf-8");
 
-console.log(`✓ Wrote ${sorted.length} questions to ${OUT_PATH}`);
-console.log(`  Featured: ${featured.length}`);
+console.log(`Wrote ${sorted.length} questions to ${OUT_PATH}`);
+console.log(`  Featured: ${featuredQs.length}`);
 console.log(`  Non-featured: ${nonFeatured.length}`);
 
 // Quick sanity checks

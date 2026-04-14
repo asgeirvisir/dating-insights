@@ -14,17 +14,11 @@ const INSIGHTS = [
     teaser:
       "The assumption is that cynicism grows with age. The data doesn't agree.",
   },
-  {
-    slug: "the-nordic-divide",
-    title: "The Nordic divide",
-    teaser:
-      "Same questions, different answers. Where you live in the Nordics shapes what you're willing to admit.",
-  },
 ];
 
 export default function GuessaryInsightCards() {
   return (
-    <div className="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-6">
+    <div className="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
       {INSIGHTS.map((insight, i) => (
         <Link
           key={insight.slug}

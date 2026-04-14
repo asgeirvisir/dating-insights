@@ -34,24 +34,42 @@ interface ChartState {
 function deriveChartState(
   market: string,
   splitGender: boolean,
-  secondMarket: string | null,
-  genderFilter: string | null
+  compareRest: boolean,
+  secondMarket: string | null
 ): ChartState {
   const mktLabel = (k: string) =>
     MARKETS.find((m) => m.key === k)?.label ?? k;
   const mktShort = (k: string) =>
     MARKETS.find((m) => m.key === k)?.short ?? k;
 
-  if (!splitGender && !secondMarket) {
+  // Two specific markets compared
+  if (secondMarket) {
     return {
       sliceKeyA: market,
+      sliceKeyB: secondMarket,
       labelA: mktLabel(market),
+      labelB: mktLabel(secondMarket),
       shortA: mktShort(market),
-      isComparing: false,
+      shortB: mktShort(secondMarket),
+      isComparing: true,
     };
   }
 
-  if (splitGender && !secondMarket) {
+  // Compare market vs rest-of-markets
+  if (compareRest && market !== "all") {
+    return {
+      sliceKeyA: market,
+      sliceKeyB: `rest_${market}`,
+      labelA: mktLabel(market),
+      labelB: "Rest",
+      shortA: mktShort(market),
+      shortB: "REST",
+      isComparing: true,
+    };
+  }
+
+  // Single market with gender split
+  if (splitGender) {
     const prefix = market === "all" ? "all" : market;
     return {
       sliceKeyA: `${prefix}_male`,
@@ -64,36 +82,11 @@ function deriveChartState(
     };
   }
 
-  if (secondMarket && !genderFilter) {
-    return {
-      sliceKeyA: market,
-      sliceKeyB: secondMarket,
-      labelA: mktLabel(market),
-      labelB: mktLabel(secondMarket),
-      shortA: mktShort(market),
-      shortB: mktShort(secondMarket),
-      isComparing: true,
-    };
-  }
-
-  if (secondMarket && genderFilter) {
-    const gLabel = genderFilter === "male" ? "Male" : "Female";
-    const gShort = genderFilter === "male" ? "M" : "F";
-    return {
-      sliceKeyA: `${market}_${genderFilter}`,
-      sliceKeyB: `${secondMarket}_${genderFilter}`,
-      labelA: `${mktLabel(market)} — ${gLabel}`,
-      labelB: `${mktLabel(secondMarket)} — ${gLabel}`,
-      shortA: `${mktShort(market)} ${gShort}`,
-      shortB: `${mktShort(secondMarket)} ${gShort}`,
-      isComparing: true,
-    };
-  }
-
+  // Single market, no comparison
   return {
-    sliceKeyA: "all",
-    labelA: "All",
-    shortA: "ALL",
+    sliceKeyA: market,
+    labelA: mktLabel(market),
+    shortA: mktShort(market),
     isComparing: false,
   };
 }
@@ -239,9 +232,9 @@ export default function GuessaryExplorer({
   questions,
 }: GuessaryExplorerProps) {
   const [market, setMarket] = useState("all");
+  const [compareRest, setCompareRest] = useState(false);
   const [secondMarket, setSecondMarket] = useState<string | null>(null);
   const [splitGender, setSplitGender] = useState(false);
-  const [genderFilter, setGenderFilter] = useState<string | null>(null);
 
   // Shuffle with featured spread
   const shuffledQuestions = useMemo(
@@ -249,63 +242,69 @@ export default function GuessaryExplorer({
     [questions]
   );
 
+  const isComparing = compareRest || secondMarket !== null;
+
   const handleMarketSelect = (key: string) => {
     if (key === "all") {
+      // Always reset to default
       setMarket("all");
+      setCompareRest(false);
       setSecondMarket(null);
-      setGenderFilter(null);
+      setSplitGender(false);
       return;
     }
 
+    // Two-market mode: tap one of the selected markets to deselect it
     if (secondMarket) {
       if (key === market) {
+        // Deselect first → remaining market vs rest
         setMarket(secondMarket);
         setSecondMarket(null);
+        setCompareRest(true);
         setSplitGender(false);
-        setGenderFilter(null);
         return;
       }
       if (key === secondMarket) {
+        // Deselect second → remaining market vs rest
         setSecondMarket(null);
-        setGenderFilter(null);
+        setCompareRest(true);
+        setSplitGender(false);
         return;
       }
+      // Third market tapped while two are selected — ignore
       return;
     }
 
+    // Market vs rest mode: tap same to go single, tap different to go two-market
+    if (compareRest && key === market) {
+      setCompareRest(false);
+      setSplitGender(false);
+      return;
+    }
+    if (compareRest && key !== market) {
+      setSecondMarket(key);
+      setCompareRest(false);
+      setSplitGender(false);
+      return;
+    }
+
+    // Single market mode: tap same to go back to all, tap different to compare vs rest
     if (key === market) {
       setMarket("all");
-      setSplitGender(false);
-      setGenderFilter(null);
       return;
     }
 
-    if (market !== "all") {
-      setSecondMarket(key);
-      setSplitGender(false);
-      return;
-    }
-
+    // From all or single market → enter compare-rest mode
     setMarket(key);
+    setCompareRest(true);
     setSplitGender(false);
-    setGenderFilter(null);
   };
 
   const handleSplitToggle = () => {
     setSplitGender((prev) => !prev);
   };
 
-  const handleGenderFilter = (key: string) => {
-    setGenderFilter((prev) => (prev === key ? null : key));
-  };
-
-  const isTwoMarkets = secondMarket !== null;
-  const chartState = deriveChartState(
-    market,
-    splitGender,
-    secondMarket,
-    genderFilter
-  );
+  const chartState = deriveChartState(market, splitGender, compareRest, secondMarket);
 
   return (
     <>
@@ -318,19 +317,31 @@ export default function GuessaryExplorer({
               Market
             </span>
             {MARKETS.map((m) => {
-              const isActive =
-                m.key === "all"
-                  ? market === "all" && !secondMarket
-                  : m.key === market || m.key === secondMarket;
-              const isDisabled =
-                m.key !== "all" &&
-                isTwoMarkets &&
-                m.key !== market &&
-                m.key !== secondMarket;
-
+              let isActive: boolean;
               let gradientIdx: 0 | 1 | undefined;
-              if (isTwoMarkets && m.key === market) gradientIdx = 0;
-              if (isTwoMarkets && m.key === secondMarket) gradientIdx = 1;
+              let isDisabled = false;
+
+              if (secondMarket) {
+                // Two-market mode: only those two are active
+                isActive = m.key === market || m.key === secondMarket;
+                isDisabled =
+                  m.key !== "all" &&
+                  m.key !== market &&
+                  m.key !== secondMarket;
+                if (m.key === market) gradientIdx = 0;
+                if (m.key === secondMarket) gradientIdx = 1;
+              } else if (compareRest) {
+                // Market vs rest: both All and market are active
+                isActive = m.key === "all" || m.key === market;
+                if (m.key === market) gradientIdx = 0;
+                if (m.key === "all") gradientIdx = 1;
+              } else {
+                // Single mode
+                isActive =
+                  m.key === "all"
+                    ? market === "all"
+                    : m.key === market;
+              }
 
               return (
                 <Chip
@@ -350,22 +361,12 @@ export default function GuessaryExplorer({
             <span className="font-body text-[13px] uppercase tracking-wider text-white/55 mr-1 w-14">
               Gender
             </span>
-            {isTwoMarkets ? (
-              GENDERS.map((g) => (
-                <Chip
-                  key={g.key}
-                  label={g.label}
-                  active={genderFilter === g.key}
-                  onClick={() => handleGenderFilter(g.key)}
-                />
-              ))
-            ) : (
-              <Chip
-                label="Split by gender"
-                active={splitGender}
-                onClick={handleSplitToggle}
-              />
-            )}
+            <Chip
+              label="Split by gender"
+              active={splitGender}
+              onClick={handleSplitToggle}
+              disabled={isComparing}
+            />
           </div>
         </div>
       </div>
