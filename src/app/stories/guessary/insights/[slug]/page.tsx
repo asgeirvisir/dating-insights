@@ -38,16 +38,16 @@ const INSIGHTS: Record<string, Insight> = {
       "q-26",  // Slept with more than ten people
     ],
     body: [
-      "Most people assume their desires are more unusual than they really are. The data says otherwise. When we asked users across the Nordics about their sex lives and fantasies, what came back wasn't shocking...it was quietly revealing. The things people whisper about are, more often than not, the things nearly everyone is doing.",
+      "Most people assume their desires are more unusual than they really are. The data says otherwise. When we asked users across the Nordics about their sex lives and fantasies, what came back wasn't shocking. It was quietly revealing. The things people whisper about are, more often than not, the things nearly everyone is doing.",
       "Take dirty talk. It feels like something people either love or avoid, but the split is nowhere near even. The vast majority are into it, and that number only grows with age. Sexual fantasy follows the same pattern: more common the older you get, which says less about youthful innocence and more about how comfort and imagination develop over time.",
-      "Thinking about someone else during sex sits in the same territory, common enough that nearly half of people admit to it, with women slightly more likely to say so than men. It's one of those findings that feels transgressive until you realize how many people are nodding quietly while reading it. Sleeping naked and sex in public are less universal, but more common than you'd guess, and fewer than you might fear.",
-      "Then there are the things that feel heavier to admit: affairs, BDSM, the experiences that carry more weight socially. These numbers are smaller, but what's interesting isn't just how many people say yes, it's when. Affairs, for instance, are nearly twice as common among the oldest group as the youngest. Not impulsive, not reckless. Something that happens slowly, inside relationships that have grown complicated over time.",
+      "Thinking about someone else during sex sits in the same territory, common enough that nearly half of people admit to it, with women slightly more likely to say so than men. It's one of those findings that feels transgressive until you realize how many people are nodding quietly while reading it.",
+      "Then there's the part that tends to surprise people most, not because the behaviors are shocking, but because of how widespread they turn out to be. Sleeping naked is close to a coin flip. Sex in public is actually more common than not. More than a third have slept with more than ten people. BDSM, despite its reputation as niche, sits comfortably in the double digits.",
       "None of this is really about guilt. It's about the gap between what people perform in public and what they actually do in private. That gap, it turns out, is smaller than most people think.",
     ],
   },
   "how-age-rewrites-the-rules": {
     slug: "how-age-rewrites-the-rules",
-    title: "People Believe in Love More as They Get Older",
+    title: "People believe in love more as they get older, not less",
     subtitle:
       "The assumption is that cynicism grows with age. The data doesn't agree.",
     publishedAt: "2026-04-10T09:00:00Z",

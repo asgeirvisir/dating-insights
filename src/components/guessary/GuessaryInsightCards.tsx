@@ -10,7 +10,7 @@ const INSIGHTS = [
   },
   {
     slug: "how-age-rewrites-the-rules",
-    title: "People believe in love more as they get older",
+    title: "People believe in love more as they get older, not less",
     teaser:
       "The assumption is that cynicism grows with age. The data doesn't agree.",
   },
