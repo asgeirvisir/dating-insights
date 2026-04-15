@@ -86,6 +86,7 @@ export interface GuessaryQuestion {
   originalIndex: number;
   question: string;
   displayQuestion: string;
+  statement: string;
   emoji: string;
   headline: string | null;
   tags: string[];

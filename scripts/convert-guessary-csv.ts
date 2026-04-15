@@ -8,6 +8,7 @@ interface GuessaryQuestion {
   originalIndex: number;
   question: string;
   displayQuestion: string;
+  statement: string;
   emoji: string;
   headline: string | null;
   tags: string[];
@@ -133,6 +134,51 @@ const CURATED: Record<number, CuratedEntry> = {
   },
 };
 
+// ─── Statement fallbacks (for questions missing do_i in CSV) ─────────────────
+
+const STATEMENT_FALLBACKS: Record<number, string> = {
+  5: "I have a bachelor's degree",
+  6: "I believe climate change is real",
+  7: "I am afraid of ghosts",
+  11: "I think the earth is flat",
+  12: "I think workplace dating is wrong",
+  13: "I have felt like someone is following me",
+  23: "I like kids",
+  26: "I have slept with more than ten people",
+  39: "I have been in an accident",
+  43: "I have seen someone die",
+  46: "I have gotten wasted on a date",
+  48: "I have had sex in public",
+  54: "I have failed a class",
+  55: "I am successful",
+  56: "I have a fetish",
+  58: "I am flexible",
+  61: "Hot dogs are sandwiches",
+  63: "I have superstitions",
+  68: "I have used food during sex",
+  70: "I have hooked up with a total stranger",
+  71: "I want a friend with benefits",
+  76: "I am a player",
+  77: "I dream about my wedding",
+  90: "I am a Type A person",
+  100: "I have tried BDSM",
+  102: "I have had an affair",
+  103: "I believe vaccines work",
+  106: "An egg salad is a chicken salad",
+  107: "I have fired a gun",
+  109: "I am a virgin",
+  110: "I think age matters in a relationship",
+  113: "I could be the president",
+  114: "I hate dogs",
+  115: "Both my parents are alive",
+  116: "I have more than $10k in my bank account",
+  122: "I have had Covid-19",
+  133: "I have had a sexually transmitted disease (STD)",
+  135: "I have kissed someone of the same sex",
+  136: "I have stolen money from a friend",
+  137: "I have a friend I don't like",
+};
+
 // ─── Default displayQuestion rewrite ─────────────────────────────────────────
 
 function rewriteDisplayQuestion(doYouForm: string): string {
@@ -203,6 +249,7 @@ interface RawRow {
   usersYes: number;
   pctYes: number;
   doYou: string;
+  doI: string;
   emoji: string;
 }
 
@@ -295,6 +342,7 @@ for (const line of dataLines) {
   if (cols.length < 13) continue;
 
   const doYou = cols[10].trim();
+  const doI = cols[11].trim();
   const emoji = cols[12].trim();
 
   // Skip questions with no text (e.g. IDs 366+)
@@ -309,6 +357,7 @@ for (const line of dataLines) {
     usersYes: parseInt(cols[5].trim(), 10),
     pctYes: parseFloat(cols[6].trim()),
     doYou,
+    doI,
     emoji,
   });
 }
@@ -345,6 +394,7 @@ for (const [questionId, rows] of groupedById) {
     originalIndex: questionId,
     question: first.doYou,
     displayQuestion,
+    statement: (first.doI || STATEMENT_FALLBACKS[questionId] || first.doYou).replace(/\.$/, ""),
     emoji,
     headline,
     tags,

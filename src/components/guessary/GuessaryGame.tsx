@@ -51,7 +51,15 @@ export default function GuessaryGame({ questions }: GuessaryGameProps) {
   const market = MARKETS[effective.m];
   const gender = GENDERS[effective.g];
   const ageGroup = AGE_GROUPS[effective.ag];
-  const answer = question.slices.all?.[ageGroup] ?? 0;
+
+  // Build slice key from current market + gender, e.g. "denmark_male", "all", "all_female"
+  const sliceKey =
+    pinned.g !== null
+      ? `${pinned.m !== null ? market.toLowerCase() : "all"}_${gender.toLowerCase()}`
+      : pinned.m !== null
+        ? market.toLowerCase()
+        : "all";
+  const answer = question.slices[sliceKey]?.[ageGroup] ?? 0;
 
   // Randomize on mount (after hydration)
   useEffect(() => {
@@ -113,6 +121,7 @@ export default function GuessaryGame({ questions }: GuessaryGameProps) {
   const selectDimension = (key: DimKey, value: number | null) => {
     setPinned((prev) => ({ ...prev, [key]: value }));
     setOpenPicker(null);
+    setRevealed(false);
   };
 
   return (
@@ -150,7 +159,7 @@ export default function GuessaryGame({ questions }: GuessaryGameProps) {
           {/* Question */}
           <div className="flex flex-1 items-center justify-center py-3 sm:py-4">
             <h3 className="text-center font-heading text-xl font-bold leading-snug text-white sm:text-2xl">
-              {question.displayQuestion}
+              {question.statement}
             </h3>
           </div>
 

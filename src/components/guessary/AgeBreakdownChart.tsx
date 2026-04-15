@@ -63,8 +63,8 @@ function ChartTooltip({
       <p className="font-body text-sm text-white tabular-nums">
         {aEntry && (
           <span>
-            <span className="text-white/50">{shortA}</span>{" "}
-            <span className="font-semibold">{aEntry.value}%</span>
+            <span style={{ color: "#FF509B" }} className="opacity-70">{shortA}</span>{" "}
+            <span style={{ color: "#FF509B" }} className="font-semibold">{aEntry.value}%</span>
           </span>
         )}
         {aEntry && bEntry && (
@@ -72,8 +72,8 @@ function ChartTooltip({
         )}
         {bEntry && (
           <span>
-            <span className="text-white/50">{shortB}</span>{" "}
-            <span className="font-semibold">{bEntry.value}%</span>
+            <span style={{ color: "#0CC4EF" }} className="opacity-70">{shortB}</span>{" "}
+            <span style={{ color: "#0CC4EF" }} className="font-semibold">{bEntry.value}%</span>
           </span>
         )}
       </p>

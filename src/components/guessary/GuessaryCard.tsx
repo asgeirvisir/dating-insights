@@ -54,7 +54,7 @@ const GuessaryCard = memo(function GuessaryCard({
       </div>
 
       <h3 className="mb-1 font-heading text-lg font-bold leading-snug text-white sm:text-xl">
-        {question.displayQuestion}
+        {question.statement}
       </h3>
 
       {question.headline && (
